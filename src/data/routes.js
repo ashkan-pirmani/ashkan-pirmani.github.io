@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    label: "Michael D'Angelo",
+    label: 'Ashkan Pirmani', // Update this label
     path: '/',
   },
   {
