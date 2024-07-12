@@ -26,6 +26,14 @@ const About = () => {
         <header>
           <div className="title">
             <h2>
+              <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+                <img
+                  src="https://ca.slack-edge.com/T0339NW49JB-U033HMBKK9C-3fd3ed0cf29d-512"
+                  alt="Ashkan Pirmani"
+                  style={{ width: '350px', height: '350px', borderRadius: '0%' }}
+                />
+              </div>
+              <br />
               <Link to="/about">About Me</Link>
             </h2>
             <p>(in about {count} words) and 3-4 minutes to read</p>
