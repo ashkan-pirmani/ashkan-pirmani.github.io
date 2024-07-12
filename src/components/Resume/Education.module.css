@@ -1,0 +1,81 @@
+/* Importing the Computer Modern Serif Roman font */
+@import url('https://fonts.googleapis.com/css2?family=Computer+Modern+Serif&display=swap');
+
+.education {
+  font-family: 'Computer Modern Serif', serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+
+.degreeList {
+  list-style-type: none; /* Remove the default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+.degreeItem {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 0; /* Adjust padding for alignment */
+}
+
+.degreeContainer {
+  padding-left: 0;
+}
+
+.degreeContainer header {
+  margin-bottom: 5px;
+}
+
+.degreeContainer h4.degree {
+  font-size: 1.25em; /* Reduced size */
+  margin: 0;
+  color: #0073e6; /* Adjusted color */
+}
+
+.degreeContainer p {
+  margin: 3px 0;
+}
+
+.degreeContainer a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.degreeContainer a:hover {
+  text-decoration: underline;
+}
+
+.degreeContainer .thesis,
+.degreeContainer .supervisor,
+.degreeContainer .points {
+  font-style: italic;
+  margin: 0;
+}
+
+.degreeContainer .points {
+  font-weight: bold;
+}
+
+.degreeSeparator {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+/* Ensure alignment with experience section */
+.degreeItem,
+.experienceItem {
+  padding-left: 0;
+  margin-left: 0;
+}
