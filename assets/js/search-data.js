@@ -37,7 +37,10 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "news-dr-doctor-squared",
+        },{id: "news-conference-participation-highlights-ectrims-2024-️-when-2024-where-copenhagen-denmark-what-presented-an-abstract-and-poster-titled-transforming-multiple-sclerosis-research-advancing-disability-progression-insights-through-practical-and-precise-federated-learning-using-real-world-data-focus-showcased-the-potential-of-federated-learning-for-advancing-insights-into-disability-progression-in-multiple-sclerosis-using-real-world-data-mie-2024-️-when-2024-where-athens-greece-what-presented-a-paper-titled-unlocking-the-power-of-real-world-data-a-framework-for-sustainable-healthcare-focus-proposed-a-practical-framework-to-leverage-real-world-data-for-achieving-sustainable-healthcare-systems-and-driving-impactful-insights",
+          title: '🌍 Conference Participation Highlights 🚀 🧠 ECTRIMS 2024 🗓️ When: 2024 📍 Where:...',
+          description: "",
+          section: "News",},{id: "news-dr-doctor-squared",
           title: 'Dr² (Doctor Squared)',
           description: "",
           section: "News",handler: () => {
