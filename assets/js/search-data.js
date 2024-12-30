@@ -30,8 +30,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-teaching",
-          title: "teaching",
+        },{id: "nav-",
+          title: "",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -40,12 +40,7 @@ ninja.data = [{
         },{id: "news-i-defended-my-phd-i-am-beyond-thrilled-to-share-that-i-have-successfully-defended-my-phd-titled-from-centralized-to-federated-the-journey-of-data-in-healthcare-supervisors-and-co-supervisors-yves-moreau-supervisor-liesbet-m-peeters-supervisor-niels-hellings-co-supervisor-what-s-it-all-about-real-world-data-rwd-in-healthcare-holds-immense-potential-but-is-often-tangled-in-challenges-like-fragmented-data-across-various-healthcare-systems-strict-privacy-and-legal-regulations-difficulty-making-data-findable-accessible-interoperable-and-reusable-fair-these-issues-are-especially-problematic-for-conditions-like-multiple-sclerosis-ms-where-the-disease-s-low-prevalence-dispersed-rwd-variable-data-formats-quality-standards-and-guidelines-more-barriers-what-did-my-research-do-my-thesis-advocates-for-a-shift-from-centralized-data-analysis-to-a-federated-approach-federated-analysis-allows-distributed-datasets-to-be-analyzed-without-centralization-preserving-privacy-and-data-integrity-️-three-pillars-of-my-work-1️⃣-hybrid-data-management-pipeline-supports-integration-of-diverse-data-sources-successfully-implemented-in-the-global-data-sharing-initiative-for-covid-19-and-ms-resulted-in-the-largest-cohort-of-ms-and-covid-19-data-ever-collected-2️⃣-federated-learning-for-everyone-fl4e-framework-empowers-stakeholders-to-better-leverage-rwd-through-adaptable-federated-analysis-tools-introduced-the-concept-of-a-degree-of-federation-to-balance-centralization-vs-decentralization-️-3️⃣-federated-analysis-in-ms-research-used-routine-clinical-data-to-predict-disability-progression-in-ms-proposed-novel-techniques-to-improve-federation-performance-proved-federated-analysis-is-a-robust-alternative-to-centralized-methods-why-it-matters-this-work-paves-the-way-for-more-inclusive-privacy-aware-and-pragmatic-technologies-in-healthcare-by-addressing-critical-gaps-federated-data-analysis-can-drive-innovation-collaboration-and-better-outcomes-for-patients-worldwide-️-️-thank-you-a-heartfelt-thank-you-to-my-supervisors-collaborators-and-everyone-who-supported-me-on-this-journey-your-guidance-and-encouragement-made-this-milestone-possible-here-s-to-the-next-chapter-of-advancing-healthcare-through-technology",
           title: '🎉🎓 I DEFENDED MY PHD! 🎓🎉 I am beyond thrilled to share that...',
           description: "",
-          section: "News",},{id: "news-dr-doctor-squared",
-          title: 'Dr² (Doctor Squared)',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{
+          section: "News",},{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
