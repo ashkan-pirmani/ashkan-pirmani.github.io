@@ -97,73 +97,63 @@
   "certificates": [
   {
     "name": "Oxford ML School Health/Finance - AI for Global Goals",
-    "date": "2020-01-01",
+    "date": "2022",
     "issuer": "Oxford University",
-    "url": "https://certificateLink.com",
-    "icon": "fa-solid fa-location-dot"
+    "icon": "fa-solid fa-graduation-cap"
   },
   {
     "name": "Deep Learning in Python",
-    "date": "2020-02-01",
+    "date": "2022",
     "issuer": "DataCamp",
-    "url": "https://certificateLink.com",
-    "icon": "fa-solid fa-location-dot"
+    "icon": "fa-brands fa-python"
   },
   {
     "name": "Java Programming and Software Engineering",
-    "date": "2019-03-01",
+    "date": "2021",
     "issuer": "Coursera",
-    "url": "https://certificateLink.com",
-    "icon": "fa-solid fa-location-dot"
+    "icon": "fa-solid fa-code"
   },
   {
     "name": "Advanced ASP.NET Core 3.1 MVC",
-    "date": "2019-04-01",
+    "date": "2021",
     "issuer": "Udemy",
-    "url": "https://certificateLink.com",
-    "icon": "fa-solid fa-location-dot"
+    "icon": "fa-solid fa-laptop-code"
   },
   {
     "name": "Kubernetes for the Absolute Beginners - Hands-on",
-    "date": "2019-05-01",
+    "date": "2020",
     "issuer": "Udemy",
-    "url": "https://certificateLink.com",
-    "icon": "fa-solid fa-location-dot"
+    "icon": "fa-solid fa-cubes"
   },
   {
     "name": "Federated Learning",
-    "date": "2020-06-01",
+    "date": "2022",
     "issuer": "Udemy",
-    "url": "https://certificateLink.com",
-    "icon": "fa-solid fa-location-dot"
+    "icon": "fa-solid fa-network-wired"
   },
   {
     "name": "Django with Data Science",
-    "date": "2020-07-01",
+    "date": "2022",
     "issuer": "Udemy",
-    "url": "https://certificateLink.com",
-    "icon": "fa-solid fa-location-dot"
+    "icon": "fa-brands fa-python"
   },
   {
     "name": "Professional Quality Engineering",
-    "date": "2018-08-01",
+    "date": "2019",
     "issuer": "IADL",
-    "url": "https://certificateLink.com",
-    "icon": "fa-solid fa-location-dot"
+    "icon": "fa-solid fa-check-circle"
   },
   {
     "name": "The Basics of 6 Sigma and the General Yellow Belt of the 6 Sigma",
-    "date": "2018-09-01",
+    "date": "2018",
     "issuer": "IADL",
-    "url": "https://certificateLink.com",
-    "icon": "fa-solid fa-location-dot"
+    "icon": "fa-solid fa-check-square"
   },
   {
     "name": "Six Sigma Green Belt",
-    "date": "2018-10-01",
+    "date": "2018",
     "issuer": "IADL",
-    "url": "https://certificateLink.com",
-    "icon": "fa-solid fa-location-dot"
+    "icon": "fa-solid fa-award"
   }
 ],  
   "skills": [
