@@ -7,20 +7,61 @@
 @article{faes2024federated,
   title={Federated Block-Term Tensor Regression for decentralised data analysis in healthcare},
   author={Faes, Axel and Pirmani, Ashkan and Moreau, Yves and Peeters, Liesbet M},
+  abstract= {Block-Term Tensor Regression (BTTR) has proven to be a powerful tool for modeling
+  complex, high-dimensional data by leveraging multilinear relationships, making it particularly well-
+  suited for applications in healthcare and neuroscience. However, traditional implementations of
+  BTTR rely on centralized datasets, which pose significant privacy risks and hinder collaboration
+  across institutions. To address these challenges, we introduce Federated Block-Term Tensor
+  Regression (FBTTR), an extension of BTTR designed for federated learning scenarios. FBTTR
+  enables decentralized data analysis, allowing institutions to collaboratively build predictive models
+  while preserving data privacy and complying with regulations.
+  FBTTR represents a major step forward in applying tensor regression to federated learning
+  environments. Its performance is evaluated in two case studies: finger movement decoding from
+  Electrocorticography (ECoG) signals and heart disease prediction. In the first case study, using the
+  BCI Competition IV dataset, FBTTR outperforms non-multilinear models, demonstrating superior
+  accuracy in decoding finger movements. For the dataset, for subject 3, the thumb obtained a
+  performance of 0.76 ± .05 compared to 0.71 ± 0.05 for centralised BTTR. In the second case study,
+  FBTTR is applied to predict heart disease using real-world clinical datasets, outperforming both
+  standard federated learning approaches and centralized BTTR models. In the Fed-Heart-Disease
+  Dataset, an AUC-ROC was obtained of 0.872 ± 0.02 and an accuracy of 0.772 ± 0.02 compared to
+  0.812 ± 0.003 and 0.753 ± 0.007 for the centralized model.
+  Empirical evaluations highlight the robustness and scalability of FBTTR, achieving predictive
+  performance comparable to centralized models while significantly reducing privacy concerns.
+  Additionally, the algorithm is computationally efficient, making it viable for real-world deployment
+  where timely predictions are critical. By offering a scalable and privacy-preserving solution, FBTTR
+  has the potential to advance predictive analytics across multiple domains, including healthcare
+  and brain-computer interface applications. Notably, FBTTR is developed as open-source software,
+  promoting transparency and fostering collaboration within the research community.},
   journal={arXiv preprint arXiv:2412.06815},
+  google_scholar_id={RC2DM7kAAAAJ},
+  dimensions={true},
+  abbr={Federated Learning},
   year={2024}
 }
 
-@article{pirmani2024centralized,
+@booktitle{pirmani2024centralized,
   title={From Centralized to Federated: The Journey of Data in Healthcare},
   author={Pirmani, Ashkan and Moreau, Yves and Peeters, Liesbet and Hellings, Niels},
+  google_scholar_id={RC2DM7kAAAAJ},
+  abbr={PhD Dissertation},
+  abstract={Real-World Data (RWD) in healthcare holds tremendous potential, but its effective use is often hampered by significant challenges. The fragmentation of data across various healthcare systems, combined with strict privacy and legal regulations, greatly limits the ability to make RWD easily Findable, Accessible, Interoperable, and Reusable (FAIR).
+  These challenges become even more pronounced when developing analytical models, where the issue of \emph{data centralization} presents a significant obstacle. Conventional data analysis methods typically depend on a single, unified dataset. However, for conditions like Multiple Sclerosis (MS), where the low prevalence of the disease is compounded by the dispersion of RWD across numerous repositories, the situation becomes even more complex. The variability in data formats, quality standards, and regulatory guidelines further complicates the aggregation of data. Consequently, these obstacles not only intensify the fragmentation of RWD but also hinder the generation of robust, large-scale evidence critical for advancing healthcare outcomes.
+  Recognizing the gaps and needs in current practices, this thesis advocates for a shift towards federated data analysis as a core strategy. This approach enables the examination of distributed datasets without requiring centralization, thus preserving data privacy and integrity. Although federated analysis shows enormous potential as a solution to overcome many of the challenges associated with RWD, its widespread adoption is still limited. This is primarily due to the complexities involved in its practical implementation, amplified by the multidisciplinary nature of its domain and the heterogeneous characteristics of RWD.
+  In this thesis, we outline the evolution of data management pipelines, transitioning from a centralized to a fully federated framework, and introduce three foundational pillars where technical solutions are combined with clinical perspectives aiming to advance the use of sophisticated yet inclusive, privacy-aware, but pragmatic technologies in healthcare.
+  The thesis introduces its first pillar: a comprehensive, research-agnostic hybrid data management pipeline. This pipeline is designed to support the integration of diverse data sources and formats, facilitating a more inclusive and practical approach to data analysis. This pipeline was effectively implemented in the Global Data Sharing Initiative for COVID-19 and MS, leading to the collection of the largest cohort of MS and COVID-19, showcasing the potential of collaborative, evidence-based healthcare advancements. 
+  As the second pillar of this thesis, the ``Federated Learning For Everyone'' framework is presented. This framework empowers its diverse stakeholders to more effectively leverage RWD through an adaptable and inclusive federated data analysis ecosystem. In addition, the framework introduces the novel concept of the `degree of federation', which allows for flexible adjustments between data centralization and decentralization to meet specific healthcare needs.
+  Finally, the thesis explores the pioneering application of federated data analysis in MS research. It utilizes routine clinical data to evaluate the effectiveness of federated analysis in predicting disability progression, employing one of the largest available cohorts of people with MS. This evaluation includes assessing various federated configurations and optimizing models to demonstrate that federated analysis is a robust alternative to conventional centralized approaches. Additionally, the thesis proposes novel federated modeling techniques to enhance federation performance, further highlighting the potential of federated analysis in complex healthcare research settings.
+  Overall, this thesis underscores the necessity and benefits of transitioning towards inclusive federated data management in healthcare by addressing critical gaps and leveraging pragmatic, privacy-aware technologies. This approach paves the way for broader adoption and advocate for impactful innovations in the field, highlighting the significant potential for enhancing healthcare research and practice.
+  },
   year={2024}
 }
 
 @article{pirmani2024unlocking,
   title={Unlocking the Power of Real-World Data: A Framework for Sustainable Healthcare.},
   journal={Studies in Health Technology and Informatics},
+  abstract= {Real-world data (RWD) has the potential to revolutionize healthcare by offering valuable insights into patient outcomes and treatment efficacy. However, leveraging RWD effectively presents challenges, including its inherent limitations, diverse stakeholders, and insufficient data management pipelines. A proposed framework advocates three essential elements: adherence to FAIR principles (Findable, Accessible, Interoperable, and Reusable), stakeholder engagement and education, and highlighting the need for inclusive, pragmatic federated hybrid pipelines. By employing these strategies, healthcare organizations can overcome obstacles to RWD utilization and foster sustainable progress in patient care.}
   volume={316},
+  google_scholar_id={RC2DM7kAAAAJ},
   pages={1582--1583},
   year={2024}
 }
@@ -31,7 +72,14 @@
   journal={JMIR Formative Research},
   volume={8},
   pages={e55496},
+  google_scholar_id={RC2DM7kAAAAJ},
   year={2024},
+  abbr={Federated Learning},
+  selected={true},
+  abstract={Background: The integrity and reliability of clinical research outcomes rely heavily on access to vast amounts of data. However, the fragmented distribution of these data across multiple institutions, along with ethical and regulatory barriers, presents significant challenges to accessing relevant data. While federated learning offers a promising solution to leverage insights from fragmented data sets, its adoption faces hurdles due to implementation complexities, scalability issues, and inclusivity challenges. Objective: This paper introduces Federated Learning for Everyone (FL4E), an accessible framework facilitating multistakeholder collaboration in clinical research. It focuses on simplifying federated learning through an innovative ecosystem-based approach.
+    Methods: The “degree of federation” is a fundamental concept of FL4E, allowing for flexible integration of federated and centralized learning models. This feature provides a customizable solution by enabling users to choose the level of data decentralization based on specific health care settings or project needs, making federated learning more adaptable and efficient. By using an ecosystem-based collaborative learning strategy, FL4E encourages a comprehensive platform for managing real-world data, enhancing collaboration and knowledge sharing among its stakeholders.
+    Results: Evaluating FL4E’s effectiveness using real-world health care data sets has highlighted its ecosystem-oriented and inclusive design. By applying hybrid models to 2 distinct analytical tasks—classification and survival analysis—within real-world settings, we have effectively measured the “degree of federation” across various contexts. These evaluations show that FL4E’s hybrid models not only match the performance of fully federated models but also avoid the substantial overhead usually linked with these models. Achieving this balance greatly enhances collaborative initiatives and broadens the scope of analytical possibilities within the ecosystem.
+    Conclusions: FL4E represents a significant step forward in collaborative clinical research by merging the benefits of centralized and federated learning. Its modular ecosystem-based design and the “degree of federation” feature make it an inclusive, customizable framework suitable for a wide array of clinical research scenarios, promising to revolutionize the field through improved collaboration and data use. Detailed implementation and analyses are available on the associated GitHub repository.},
   publisher={JMIR Publications Toronto, Canada}
 }
 
@@ -39,6 +87,8 @@
   title={Transforming Multiple Sclerosis Research: Advancing Disability Progression Insights through Practical and Precise Federated Learning using Real-World Data},
   author={Pirmani, Ashkan and De Brouwer, Edward and Oldenhof, Martijn and Passemiers, Antoine and Van Wijmeersch, Bart and Butzkueven, Helmut and Horakova, Dana and Ozakbas, Serkan and Patti, Francesco and Madueno, Sara Eichau and others},
   year={2024},
+  abbr={Federated Learning},
+  google_scholar_id={RC2DM7kAAAAJ},
   publisher={SAGE PUBLICATIONS LTD}
 }
 
@@ -49,7 +99,15 @@
   volume={11},
   number={1},
   pages={e48030},
+  abbr={Global Data Sharing Initiative},
+  google_scholar_id={RC2DM7kAAAAJ},
   year={2023},
+  abstract={Background: Investigating low-prevalence diseases such as multiple sclerosis is challenging because of the rather small number of individuals affected by this disease and the scattering of real-world data across numerous data sources. These obstacles impair data integration, standardization, and analysis, which negatively impact the generation of significant meaningful clinical evidence.
+  Objective: This study aims to present a comprehensive, research question–agnostic, multistakeholder-driven end-to-end data analysis pipeline that accommodates 3 prevalent data-sharing streams: individual data sharing, core data set sharing, and federated model sharing.
+  Methods: A demand-driven methodology is employed for standardization, followed by 3 streams of data acquisition, a data quality enhancement process, a data integration procedure, and a concluding analysis stage to fulfill real-world data-sharing requirements. This pipeline’s effectiveness was demonstrated through its successful implementation in the COVID-19 and multiple sclerosis global data sharing initiative.
+  Results: The global data sharing initiative yielded multiple scientific publications and provided extensive worldwide guidance for the community with multiple sclerosis. The pipeline facilitated gathering pertinent data from various sources, accommodating distinct sharing streams and assimilating them into a unified data set for subsequent statistical analysis or secure data examination. This pipeline contributed to the assembly of the largest data set of people with multiple sclerosis infected with COVID-19.
+  Conclusions: The proposed data analysis pipeline exemplifies the potential of global stakeholder collaboration and underlines the significance of evidence-based decision-making. It serves as a paradigm for how data sharing initiatives can propel advancements in health care, emphasizing its adaptability and capacity to address diverse research inquiries.},
+  selected={true},
   publisher={JMIR Publications Inc., Toronto, Canada}
 }
 
@@ -59,6 +117,8 @@
   journal={Multiple Sclerosis and Related Disorders},
   volume={66},
   pages={104072},
+  abbr={Global Data Sharing Initiative},
+  google_scholar_id={RC2DM7kAAAAJ},
   year={2022},
   publisher={Elsevier}
 }
@@ -69,7 +129,15 @@
   journal={Neurology: Neuroimmunology \& Neuroinflammation},
   volume={9},
   number={6},
+  abbr={Global Data Sharing Initiative},
+  google_scholar_id={RC2DM7kAAAAJ},
+  selected={true},
+  abstract={Background and Objectives: Certain demographic and clinical characteristics, including the use of some disease-modifying therapies (DMTs), are associated with severe acute respiratory syndrome coronavirus 2 infection severity in people with multiple sclerosis (MS). Comprehensive exploration of these relationships in large international samples is needed.
+    Methods: Clinician-reported demographic/clinical data from 27 countries were aggregated into a data set of 5,648 patients with suspected/confirmed coronavirus disease 2019 (COVID-19). COVID-19 severity outcomes (hospitalization, admission to intensive care unit [ICU], requiring artificial ventilation, and death) were assessed using multilevel mixed-effects ordered probit and logistic regression, adjusted for age, sex, disability, and MS phenotype. DMTs were individually compared with glatiramer acetate, and anti-CD20 DMTs with pooled other DMTs and with natalizumab.
+    Results: Of 5,648 patients, 922 (16.6%) with suspected and 4,646 (83.4%) with confirmed COVID-19 were included. Male sex, older age, progressive MS, and higher disability were associated with more severe COVID-19. Compared with glatiramer acetate, ocrelizumab and rituximab were associated with higher probabilities of hospitalization (4% [95% CI 1–7] and 7% [95% CI 4–11]), ICU/artificial ventilation (2% [95% CI 0–4] and 4% [95% CI 2–6]), and death (1% [95% CI 0–2] and 2% [95% CI 1–4]) (predicted marginal effects). Untreated patients had 5% (95% CI 2–8), 3% (95% CI 1–5), and 1% (95% CI 0–3) higher probabilities of the 3 respective levels of COVID-19 severity than glatiramer acetate. Compared with pooled other DMTs and with natalizumab, the associations of ocrelizumab and rituximab with COVID-19 severity were also more pronounced. All associations persisted/enhanced on restriction to confirmed COVID-19.
+    Discussion: Analyzing the largest international real-world data set of people with MS with suspected/confirmed COVID-19 confirms that the use of anti-CD20 medication (both ocrelizumab and rituximab), as well as male sex, older age, progressive MS, and higher disability are associated with more severe course of COVID-19.},
   pages={e200021},
+  dimensions={true},
   year={2022},
   publisher={AAN Enterprises}
 }
@@ -159,35 +227,6 @@
   year={2020}
 }
 
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
 
 
 
