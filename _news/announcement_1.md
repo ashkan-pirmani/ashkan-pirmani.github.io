@@ -2,7 +2,7 @@
 layout: post
 title: Dr² (Doctor Squared)
 date: 2024-11-29 17:00:00-0400
-inline: true
+inline: false
 related_posts: false
 ---
 
