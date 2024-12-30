@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dr² (Doctor Squared)
+title: MIE
 date: 2024-08-20 17:00:00-0400
 inline: true
 related_posts: false

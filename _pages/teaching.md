@@ -7,21 +7,15 @@ nav: true
 nav_order: 6
 ---
 
-## 🎓 Teaching, Research, and Supervision Highlights 🚀
+🌟 I'm proud to be an active teaching member for the *“Data Science in Healthcare”* course, part of the Healthcare Engineering program at Hasselt University 🏫, for the 2023–2024 academic year 📅. It’s exciting to guide students as they explore the intersection of healthcare and data science.
 
-- 🌟 **Active teaching member** for the *"Data Science in Healthcare"* course within the **Healthcare Engineering program** at Hasselt University 🏫 for the academic years **2023–2024** 📅.
+👨‍🏫 At KU Leuven, I’ve had the privilege of supervising **7 Master’s theses in Artificial Intelligence** 🧠. These projects tackled some fascinating topics in federated learning, model personalization, and predictive analytics, including:  
+- 🏥 **Predicting Hospitalized Patients**: Comparing federated learning with pooled and local datasets 📊.  
+- 📂 **Data Partitioning Scenarios**: Studying how data distribution affects training accuracy 📈.  
+- 🪄 **Federated Boosting in Semi-Supervised Learning**: Developing creative ways to improve boosting techniques in federated setups 🌐.  
+- 🧩 **Contrastive Learning**: Exploring new ways to apply contrastive learning to improve AI models 🔍.  
+- 🧑‍🔧 **Personalized Models in Federated Learning**: Testing new architectures 🏗️ and exchanging parameters to enhance personalization 🛠️.  
+- 🎯 **Fine-Tuning Global Models**: Tweaking global federated learning models to boost performance 🔧.  
+- 🧬 **Early Disease Detection**: Using shallow whole genome sequencing (sWGS) of cell-free DNA (cfDNA) for advanced diagnostics 🔬.  
 
----
-
-- 👨‍🏫 **Supervised 7 Master’s theses** in Artificial Intelligence at KU Leuven 🧠, focusing on:
-  - 🏥 **Model Performance in Prediction of Hospitalized Patients**: A comparative study using federated learning 🤝 versus pooled and local datasets 📊.
-  - 📂 **Effects of Different Data Partitioning Scenarios**: Investigated their impact on training accuracy 📈 in federated learning.
-  - 🪄 **Federated Boosting in Semi-Supervised Learning**: Developed innovative approaches ✨ for boosting techniques in federated environments 🌐.
-  - 🧩 **Contrastive Learning in Artificial Intelligence**: Explored methodologies for leveraging **contrastive learning** 🔍 to improve AI models.
-  - 🧑‍🔧 **Learning Personalized Models in Federated Learning**: Exchanged partial parameters 🛠️ and tested new architectures 🏗️ to enhance model personalization.
-  - 🎯 **Fine-Tuning Approaches for Personalizing Global Models**: Improved federated learning model performance 📊 through tailored fine-tuning techniques 🔧.
-  - 🧬 **Early Disease Detection using Federated Learning**: Applied shallow whole genome sequencing (sWGS) 🧪 of cell-free DNA (cfDNA) for advanced diagnostics 🔬.
-
----
-
-- 💡 **Dedicated to advancing research** in Artificial Intelligence 🤖 and **healthcare data science** 🩺 while mentoring future professionals 🌱 and researchers 🔍.
+💡 For me, it’s all about advancing research in Artificial Intelligence 🤖 and healthcare data science 🩺 while mentoring the next generation of professionals and researchers 🌱. Watching students grow and push the boundaries of innovation is incredibly rewarding! 🔍
