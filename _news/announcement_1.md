@@ -2,7 +2,7 @@
 layout: post
 title: Dr² (Doctor Squared)
 date: 2015-11-07 16:11:00-0400
-inline: false
+inline: true
 related_posts: false
 
 # 🎉🎓 I DEFENDED MY PHD! 🎓🎉
