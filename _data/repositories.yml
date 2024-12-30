@@ -1,14 +1,14 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ashkan_pirmani
+  - UHasselt-BiomedicalDataSciences
+  - MS-DATA-ALLIANCE
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - MS-DATA-ALLIANCE/COVID19-GDSI2021
+  - ashkan-pirmani/FL4E-Analysis
+  - ashkan-pirmani/FL4E
+  - UHasselt-BiomedicalDataSciences/federated-learning-toolkit
+  - weimingwill/awesome-federated-learning
+  - Xtra-Computing/NIID-Bench
