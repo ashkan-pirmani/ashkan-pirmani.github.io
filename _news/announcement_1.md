@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dr² (Doctor Squared)
+title: 🎓 Dr² (Doctor Squared—yes, you heard it right! Click on me 💡
 date: 2024-11-29 17:00:00-0400
 inline: false
 related_posts: false
