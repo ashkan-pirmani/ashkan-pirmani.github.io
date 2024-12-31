@@ -9,31 +9,30 @@
     }
   },
 "work": [
+
   {
-    "position": "Lead Architect",
-    "organization": "Global Data Sharing Initiative",
-    "startDate": "2020-03",
-    "endDate": "2022-12",
-    "summary": "Led system architecture and strategic efforts to scale up data collection for COVID-19 and strengthen global Multiple Sclerosis (MS) research efforts.",
-    "highlights": [
-      "Implemented a federated 3-layer data analysis pipeline, enabling privacy-preserving data sharing across international MS cohorts.",
-      "Facilitated the largest COVID-19 and MS dataset collection, driving more robust, evidence-based insights for clinicians and researchers."
-    ]
+    "position": "Postdoctoral Researcher",
+    "name": "KU Leuven - Hasselt University",
+    "startDate": "2025",
+    "endDate": "ongoing"
   },
   {
-    "position": "Data Scientist",
-    "organization": "Project Athena",
-    "startDate": "2021-03",
-    "endDate": "2023-09",
-    "summary": "Focused on secure collaboration and advanced machine learning techniques to enhance personalized medicine in clinical settings.",
-    "highlights": [
-      "Developed predictive analytics models to improve therapeutic outcomes while upholding stringent data privacy requirements.",
-      "Introduced and integrated analytics workflows that enabled cross-institutional collaboration, proving a scalable and secure approach to data sharing."
+    "position": "PhD Researcher",
+    "name": "KU Leuven - Hasselt University",
+    "startDate": "2019",
+    "endDate": "2024",
+    "summary": "Took a two-pronged approach to **federated learning (FL)**, focusing on building the **infrastructure** for secure data collaboration and advancing the **analysis** with optimization techniques to improve performance across diverse, fragmented datasets.",
+    "highlights": [      
+      "I led the **FL-MS-RWD study**, where we tackled the challenge of predicting **disability progression in Multiple Sclerosis (MS)** using real-world data from over **26,000 patients**—one of the largest datasets ever analyzed in this context. To make this possible, I developed a **new federated learning schema and algorithm** that allowed global models to adapt to the unique characteristics of local datasets. This not only bridged the gap between centralized and decentralized approaches but also showed that FL can deliver **powerful, privacy-preserving models** that often outperform traditional methods, all while keeping patient data secure.",  
+      "Built a **flexible, hybrid data pipeline** that integrated diverse datasets and supported multiple data-sharing models. This pipeline powered the **Global Data Sharing Initiative for COVID-19 and MS**, assembling the *largest-ever dataset* for MS and COVID-19 research and driving insights at scale.",  
+      "Developed the **FL4E (Federated Learning For Everyone)** platform, a comprehensive framework that empowers stakeholders to adapt between centralized and federated analysis. Introduced the concept of the **“degree of federation”**, a practical tool that allows tailored privacy and data-sharing configurations to meet the needs of specific healthcare projects.",  
+      "Collaborated with multidisciplinary teams, including clinicians, data scientists, and engineers, to ensure that technical solutions met real-world healthcare needs and translated into measurable outcomes.",
+      "Presented findings at international conferences and contributed to **[15 peer-reviewed papers]**, sharing innovations that help advance healthcare data science and beyond."
     ]
   },
   {
     "position": "Research Assistant",
-    "organization": "Decision Support System Lab – Irandoc",
+    "name": "Decision Support System Lab – Irandoc",
     "startDate": "2017-02",
     "endDate": "2019-03",
     "summary": "Worked on optimization and simulation projects, leveraging System Dynamics and Agent-Based Modeling to improve logistic operations and information management in Iran’s public sector.",
