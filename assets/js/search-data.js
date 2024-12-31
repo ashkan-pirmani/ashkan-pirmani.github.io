@@ -43,8 +43,8 @@ ninja.data = [{
           section: "News",},{id: "news-ectrims-2024-️-when-september-2024-where-copenhagen-denmark-what-presented-an-abstract-and-poster-titled-transforming-multiple-sclerosis-research-advancing-disability-progression-insights-through-practical-and-precise-federated-learning-using-real-world-data-focus-showcased-the-potential-of-federated-learning-for-advancing-insights-into-disability-progression-in-multiple-sclerosis-using-real-world-data",
           title: '🧠 ECTRIMS 2024 🗓️ When: September 2024 📍 Where: Copenhagen, Denmark 🇩🇰 🎤...',
           description: "",
-          section: "News",},{id: "news-dr-doctor-squared-yes-you-heard-it-right-click-on-me",
-          title: '🎓 Dr² (Doctor Squared—yes, you heard it right! Click on me 💡',
+          section: "News",},{id: "news-dr-doctor-squared-yes-you-heard-it-right-click-on-me-for-more-detailed-info",
+          title: '🎓 Dr² (Doctor Squared)- Yes, you heard it right! Click on me for...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1/";
