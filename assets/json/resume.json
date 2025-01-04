@@ -8,42 +8,41 @@
       "countryCode": "BE"
     }
   },
-"work": [
-
-  {
-    "position": "Postdoctoral Researcher",
-    "name": "KU Leuven - Hasselt University",
-    "startDate": "2025",
-    "endDate": "ongoing"
-  },
-  {
-    "position": "PhD Researcher",
-    "name": "KU Leuven - Hasselt University",
-    "startDate": "2019",
-    "endDate": "2024",
-    "summary": "Took a two-pronged approach to  federated learning (FL), focusing on building the infrastructure for secure data collaboration and advancing the analysis with optimization techniques to improve performance across diverse, fragmented datasets.",
-    "highlights": [      
-      "led the FL-MS-RWD study, where we tackled the challenge of predicting  disability progression in Multiple Sclerosis (MS) using real-world data from over 26,000 patients—one of the largest datasets ever analyzed in this context. To make this possible, I developed a  new federated learning schema and algorithm  that allowed global models to adapt to the unique characteristics of local datasets. This not only bridged the gap between centralized and decentralized approaches but also showed that FL can deliver powerful, privacy-preserving models  that often outperform traditional methods, all while keeping patient data secure.",  
-      "Built a  flexible, hybrid data pipeline  that integrated diverse datasets and supported multiple data-sharing models. This pipeline powered the  Global Data Sharing Initiative for COVID-19 and MS, assembling the *largest-ever dataset* for MS and COVID-19 research and driving insights at scale.",  
-      "Developed the  FL4E (Federated Learning For Everyone)  platform, a comprehensive framework that empowers stakeholders to adapt between centralized and federated analysis. Introduced the concept of the  “degree of federation”, a practical tool that allows tailored privacy and data-sharing configurations to meet the needs of specific healthcare projects.",  
-      "Collaborated with multidisciplinary teams, including clinicians, data scientists, and engineers, to ensure that technical solutions met real-world healthcare needs and translated into measurable outcomes.",
-      "Presented findings at international conferences and contributed to  [15 peer-reviewed papers] , sharing innovations that help advance healthcare data science and beyond."
-    ]
-  },
-  {
-    "position": "Research Assistant",
-    "name": "Decision Support System Lab – Irandoc",
-    "startDate": "2017-02",
-    "endDate": "2019-03",
-    "summary": "Worked on optimization and simulation projects, leveraging System Dynamics and Agent-Based Modeling to improve logistic operations and information management in Iran’s public sector.",
-    "highlights": [
-      "Developed a hybrid model for Iran Post using multi-criteria decision-making, reducing transportation costs by 15%.",
-      "Integrated non-dominated sorting genetic algorithms into simulation models to optimize hub-location allocation and overall logistics processes.",
-      "Conducted qualitative analyses of records and information management for MAFA, leading to strategic process optimizations and reduced operational bottlenecks.",
-      "Implemented a system dynamics-based simulation model tied to a decision support dashboard for real-time scenario analysis, aiding data-driven decision making."
-    ]
-  }
-],
+  "work": [
+    {
+      "position": "Postdoctoral Researcher",
+      "name": "KU Leuven - Hasselt University",
+      "startDate": "2025",
+      "endDate": "ongoing"
+    },
+    {
+      "position": "PhD Researcher",
+      "name": "KU Leuven - Hasselt University",
+      "startDate": "2019",
+      "endDate": "2024",
+      "summary": "Took a two-pronged approach to  federated learning (FL), focusing on building the infrastructure for secure data collaboration and advancing the analysis with optimization techniques to improve performance across diverse, fragmented datasets.",
+      "highlights": [
+        "led the FL-MS-RWD study, where we tackled the challenge of predicting  disability progression in Multiple Sclerosis (MS) using real-world data from over 26,000 patients—one of the largest datasets ever analyzed in this context. To make this possible, I developed a  new federated learning schema and algorithm  that allowed global models to adapt to the unique characteristics of local datasets. This not only bridged the gap between centralized and decentralized approaches but also showed that FL can deliver powerful, privacy-preserving models  that often outperform traditional methods, all while keeping patient data secure.",
+        "Built a  flexible, hybrid data pipeline  that integrated diverse datasets and supported multiple data-sharing models. This pipeline powered the  Global Data Sharing Initiative for COVID-19 and MS, assembling the *largest-ever dataset* for MS and COVID-19 research and driving insights at scale.",
+        "Developed the  FL4E (Federated Learning For Everyone)  platform, a comprehensive framework that empowers stakeholders to adapt between centralized and federated analysis. Introduced the concept of the  “degree of federation”, a practical tool that allows tailored privacy and data-sharing configurations to meet the needs of specific healthcare projects.",
+        "Collaborated with multidisciplinary teams, including clinicians, data scientists, and engineers, to ensure that technical solutions met real-world healthcare needs and translated into measurable outcomes.",
+        "Presented findings at international conferences and contributed to  [15 peer-reviewed papers] , sharing innovations that help advance healthcare data science and beyond."
+      ]
+    },
+    {
+      "position": "Research Assistant",
+      "name": "Decision Support System Lab – Irandoc",
+      "startDate": "2017-02",
+      "endDate": "2019-03",
+      "summary": "Worked on optimization and simulation projects, leveraging System Dynamics and Agent-Based Modeling to improve logistic operations and information management in Iran’s public sector.",
+      "highlights": [
+        "Developed a hybrid model for Iran Post using multi-criteria decision-making, reducing transportation costs by 15%.",
+        "Integrated non-dominated sorting genetic algorithms into simulation models to optimize hub-location allocation and overall logistics processes.",
+        "Conducted qualitative analyses of records and information management for MAFA, leading to strategic process optimizations and reduced operational bottlenecks.",
+        "Implemented a system dynamics-based simulation model tied to a decision support dashboard for real-time scenario analysis, aiding data-driven decision making."
+      ]
+    }
+  ],
   "education": [
     {
       "institution": "KU Leuven",
@@ -68,7 +67,7 @@
       "studyType": "PhD",
       "startDate": "2019-09",
       "endDate": "2024-11",
-      "supervisors": ["Prof. Liesbet M. Peeters","Prof. Niels Hellings"]
+      "supervisors": ["Prof. Liesbet M. Peeters", "Prof. Niels Hellings"]
     },
     {
       "institution": "Kharazmi University",
@@ -80,7 +79,7 @@
       "supervisors": ["Prof. HamidReza Izadbakhsh", "Prof. Ammar Jalalimanesh"]
     }
   ],
-  
+
   "awards": [
     {
       "title": "Fully Funded PhD Scholarship",
@@ -94,67 +93,67 @@
     }
   ],
   "certificates": [
-  {
-    "name": "Oxford ML School Health/Finance - AI for Global Goals",
-    "date": "2022",
-    "issuer": "Oxford University",
-    "icon": "fa-solid fa-graduation-cap"
-  },
-  {
-    "name": "Deep Learning in Python",
-    "date": "2022",
-    "issuer": "DataCamp",
-    "icon": "fa-brands fa-python"
-  },
-  {
-    "name": "Java Programming and Software Engineering",
-    "date": "2021",
-    "issuer": "Coursera",
-    "icon": "fa-solid fa-code"
-  },
-  {
-    "name": "Advanced ASP.NET Core 3.1 MVC",
-    "date": "2021",
-    "issuer": "Udemy",
-    "icon": "fa-solid fa-laptop-code"
-  },
-  {
-    "name": "Kubernetes for the Absolute Beginners - Hands-on",
-    "date": "2020",
-    "issuer": "Udemy",
-    "icon": "fa-solid fa-cubes"
-  },
-  {
-    "name": "Federated Learning",
-    "date": "2022",
-    "issuer": "Udemy",
-    "icon": "fa-solid fa-network-wired"
-  },
-  {
-    "name": "Django with Data Science",
-    "date": "2022",
-    "issuer": "Udemy",
-    "icon": "fa-brands fa-python"
-  },
-  {
-    "name": "Professional Quality Engineering",
-    "date": "2019",
-    "issuer": "IADL",
-    "icon": "fa-solid fa-check-circle"
-  },
-  {
-    "name": "The Basics of 6 Sigma and the General Yellow Belt of the 6 Sigma",
-    "date": "2018",
-    "issuer": "IADL",
-    "icon": "fa-solid fa-check-square"
-  },
-  {
-    "name": "Six Sigma Green Belt",
-    "date": "2018",
-    "issuer": "IADL",
-    "icon": "fa-solid fa-award"
-  }
-],  
+    {
+      "name": "Oxford ML School Health/Finance - AI for Global Goals",
+      "date": "2022",
+      "issuer": "Oxford University",
+      "icon": "fa-solid fa-graduation-cap"
+    },
+    {
+      "name": "Deep Learning in Python",
+      "date": "2022",
+      "issuer": "DataCamp",
+      "icon": "fa-brands fa-python"
+    },
+    {
+      "name": "Java Programming and Software Engineering",
+      "date": "2021",
+      "issuer": "Coursera",
+      "icon": "fa-solid fa-code"
+    },
+    {
+      "name": "Advanced ASP.NET Core 3.1 MVC",
+      "date": "2021",
+      "issuer": "Udemy",
+      "icon": "fa-solid fa-laptop-code"
+    },
+    {
+      "name": "Kubernetes for the Absolute Beginners - Hands-on",
+      "date": "2020",
+      "issuer": "Udemy",
+      "icon": "fa-solid fa-cubes"
+    },
+    {
+      "name": "Federated Learning",
+      "date": "2022",
+      "issuer": "Udemy",
+      "icon": "fa-solid fa-network-wired"
+    },
+    {
+      "name": "Django with Data Science",
+      "date": "2022",
+      "issuer": "Udemy",
+      "icon": "fa-brands fa-python"
+    },
+    {
+      "name": "Professional Quality Engineering",
+      "date": "2019",
+      "issuer": "IADL",
+      "icon": "fa-solid fa-check-circle"
+    },
+    {
+      "name": "The Basics of 6 Sigma and the General Yellow Belt of the 6 Sigma",
+      "date": "2018",
+      "issuer": "IADL",
+      "icon": "fa-solid fa-check-square"
+    },
+    {
+      "name": "Six Sigma Green Belt",
+      "date": "2018",
+      "issuer": "IADL",
+      "icon": "fa-solid fa-award"
+    }
+  ],
   "skills": [
     {
       "name": "Programming Languages",
@@ -166,11 +165,7 @@
     },
     {
       "name": "Technologies/Frameworks",
-      "keywords": [
-        "Federated Learning Frameworks",
-        "Cloud Environments",
-        "PyTorch"
-      ]
+      "keywords": ["Federated Learning Frameworks", "Cloud Environments", "PyTorch"]
     }
   ]
 }

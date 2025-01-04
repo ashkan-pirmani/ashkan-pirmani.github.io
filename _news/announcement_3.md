@@ -6,9 +6,10 @@ inline: true
 related_posts: false
 ---
 
-### 💡 **MIE 2024**  
-- 🗓️ **When**: August 2024  
-- 📍 **Where**: Athens, Greece 🇬🇷  
+### 💡 **MIE 2024**
+
+- 🗓️ **When**: August 2024
+- 📍 **Where**: Athens, Greece 🇬🇷
 - 🎤 **What**: Presented a **paper** titled:  
-  *"Unlocking the Power of Real-World Data: A Framework for Sustainable Healthcare"* 🏥🌍  
+  _"Unlocking the Power of Real-World Data: A Framework for Sustainable Healthcare"_ 🏥🌍
 - 💡 Focus: Proposed a practical framework to leverage **Real-World Data** for achieving **sustainable healthcare systems** and driving impactful insights.

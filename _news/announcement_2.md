@@ -6,9 +6,10 @@ inline: true
 related_posts: false
 ---
 
-### 🧠 **ECTRIMS 2024**  
-- 🗓️ **When**: September 2024  
-- 📍 **Where**: Copenhagen, Denmark 🇩🇰  
+### 🧠 **ECTRIMS 2024**
+
+- 🗓️ **When**: September 2024
+- 📍 **Where**: Copenhagen, Denmark 🇩🇰
 - 🎤 **What**: Presented an **abstract** and **poster** titled:  
-  *"Transforming Multiple Sclerosis Research: Advancing Disability Progression Insights through Practical and Precise Federated Learning using Real-World Data"* 🩺📊  
+  _"Transforming Multiple Sclerosis Research: Advancing Disability Progression Insights through Practical and Precise Federated Learning using Real-World Data"_ 🩺📊
 - 💡 Focus: Showcased the potential of **federated learning** for advancing insights into disability progression in Multiple Sclerosis using **Real-World Data**.
