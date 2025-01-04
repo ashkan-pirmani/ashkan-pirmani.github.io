@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The Journey of Data Within a Global Data Sharing Initiative
+title: The Journey of Data Within a Global Data Sharing Initiative 🚀
 description: A human story of collaboration, innovation, and the magic of federated data analysis.
 img: assets/img/gdsi-logo.png
 importance: 2
@@ -8,11 +8,11 @@ category: GDSI
 giscus_comments: true
 ---
 
-# The Journey of Data Within a Global Data Sharing Initiative 🚀
-
 What happens when you try to solve a global health mystery using data? You get a journey full of collaboration, innovation, and a whole lot of learning. That’s exactly what we experienced while working on a project to better understand multiple sclerosis (MS) and its interaction with COVID-19.
 
 This is the story of how we connected the dots, shared the insights, and changed the way we think about healthcare data.
+
+![Federated Pipeline Architecture](/assets/img/gdsi-infra.png)
 
 ---
 
@@ -63,19 +63,22 @@ This setup allowed us to gather insights from over **80 countries** without comp
 Here’s a look at how GDSI’s pipeline works:
 
 ### Federated Pipeline Architecture
+
 This diagram showcases the tools and technologies that power GDSI's federated model sharing, from Docker containers to Jupyter dashboards.
 
-![Federated Pipeline Architecture](assets/img/39f93a7cc7e10d60a43f0020225c4fd3.png)
+![Federated Pipeline Architecture](/assets/img/gdsi-flow.png)
 
 ### Data Sharing Models
+
 The visual below highlights the three main data-sharing approaches: Direct Entry, Core Data Set Sharing, and Federated Model Sharing.
 
-![Data Sharing Models](assets/img/befccbce730f8509cff804e043063808.png)
+![Data Sharing Models](/assets/img/gdsi-arch.png)
 
 ### Data Processing Workflow
+
 Here’s how data moves through the system, with preprocessing, aggregation, and analysis steps all designed to ensure privacy and quality.
 
-![Data Processing Workflow](assets/img/e13d87f0608944f8ccbc22e11f543938.png)
+![Data Processing Workflow](/assets/img/fed-pipeline.png)
 
 ---
 
