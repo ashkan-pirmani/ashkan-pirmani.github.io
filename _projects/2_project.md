@@ -4,7 +4,7 @@ title: FL4E - A Federated Learning For Everyone Revolution for Clinical Research
 description: How FL4E is breaking barriers in clinical research through collaboration, privacy, and adaptability.
 img: assets/img/fl4e_main.png
 importance: 3
-category: research
+category: PhD
 giscus_comments: true
 ---
 

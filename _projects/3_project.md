@@ -4,7 +4,7 @@ title: Predicting MS Progression with Personalized Federated Learning
 description: How we used federated learning to make disability progression predictions in multiple sclerosis more accurate and secure.
 img: assets/img/fl_ms_progression.jpg
 importance: 4
-category: research
+category: PhD
 giscus_comments: true
 ---
 

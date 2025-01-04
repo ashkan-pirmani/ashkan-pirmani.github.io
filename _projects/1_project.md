@@ -12,7 +12,11 @@ What happens when you try to solve a global health mystery using data? You get a
 
 This is the story of how we connected the dots, shared the insights, and changed the way we think about healthcare data.
 
-![Federated Pipeline Architecture](/assets/img/gdsi-infra.png)
+
+<div style="text-align: center;">
+  <img src="/assets/img/gdsi-infra.png" alt="Data Preprocessing Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+</div>
+*Figure 1: A streamlined view of data managment pipeline of GDSI*
 
 ---
 
@@ -66,19 +70,32 @@ Here’s a look at how GDSI’s pipeline works:
 
 This diagram showcases the tools and technologies that power GDSI's federated model sharing, from Docker containers to Jupyter dashboards.
 
-![Federated Pipeline Architecture](/assets/img/gdsi-flow.png)
+
+<div style="text-align: center;">
+  <img src="/assets/img/fed-pipeline.png" alt="Data Preprocessing Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+</div>
+*Figure 2: The latest federated pipeline. This is a container composed of 3 primary components. The first component is the base image, which forms the bedrock of the infrastructure. This base image uses Alpine Linux as its underlying operating system, which allows the container to be fine-tuned with other software development kits for further refinements and functionalities. The remaining 2 components, the backend and frontend, are constructed on top of this base image. The backend consists of a suite of Python scripts, which are tasked with data quality assessment, enhancement, cleaning, and analysis. These scripts collaboratively process the incoming mapped data, preparing it for subsequent analysis. By contrast, the frontend was crafted using Microsoft’s ASP.NET Core framework and the C# programming language. Within this pipeline, there is a customizable automation center module. This module can be adapted to meet the specific needs and requests of data partners. It also integrates Crontab, a tool that automates predefined tasks and outlines complex pipelines for execution at various intervals. The automation center module also links the container to the GitHub and Docker Hub version control systems. This connection ensures the use of the most recent scripts and codes published by data analysts. SDK: software development kit.*
+
 
 ### Data Sharing Models
 
 The visual below highlights the three main data-sharing approaches: Direct Entry, Core Data Set Sharing, and Federated Model Sharing.
 
-![Data Sharing Models](/assets/img/gdsi-arch.png)
+
+<div style="text-align: center;">
+  <img src="/assets/img/gds-arch.png" alt="Data Preprocessing Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+</div>
+*Figure 3: The global data sharing initiative data streams detailing the initiative’s inclusive approach through a hybrid 3-layer data acquisition architecture: (1) direct entry, where individuals upload their data via a web-based form; (2) core data set sharing, where registries upload patient-level data to the central platform under signed data transfer agreements and ethics approvals; and (3) federated model sharing, allowing registries with restrictive policies to participate without directly submitting patient-level data to the central platform.*
 
 ### Data Processing Workflow
 
 Here’s how data moves through the system, with preprocessing, aggregation, and analysis steps all designed to ensure privacy and quality.
 
-![Data Processing Workflow](/assets/img/fed-pipeline.png)
+
+<div style="text-align: center;">
+  <img src="/assets/img/gdsi-flow.png" alt="Data Preprocessing Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+</div>
+*Figure 4: The global data sharing initiative’s end-to-end real-world data analysis pipeline. Step I illustrates the standardization process, which serves as the foundation of this architecture. In this phase, data custodians are requested to map their data to the “COVID-19 in multiple sclerosis core data set” (here referred to as the data dictionary). This process applies only to the core data set and federated model sharing registries, as direct entry is already embedded with a data dictionary via the web form. Step II involves the data acquisition pipeline, featuring distinct levels of data acquisition that depend on the data holder’s willingness and internal policies, all conducted in line with ethical and legal standards. Direct entry, core data set sharing, and federated model sharing constitute the 3 data stream levels. The first 2 levels interact directly with a central platform where the core dataset is shared as static files, in this instance, Comma Separated Values (CSV), whereas federated registries necessitate additional steps before submitting outcomes to the central platform. To incorporate federated registries into the pipeline, predefined queries are dispatched alongside Docker containers to the local side of the registries. The results of these containers are then shipped back to the central platform. In step III, data from different data holders are stored in separate layers to facilitate the next data integration process. Data integration, the subsequent step in the pipeline, entails consolidating data from distinct layers into a comprehensive data set. Step IV emphasizes the utilization of the integrated data set for further data exploration and analysis. Step V highlights the local dashboard, which serves as a quality check, enabling data providers to give feedback on their uploaded data as an additional sanity check. Step VI underscores the online dashboard that has been fed by the integrated data set, utilized by the taskforce during the development of the research questions to ascertain the feasibility of the study and to monitor the data being collected. In step VII, a Jupyter Notebook is provided to the data analysis team, securely connected to the integrated data set, facilitating statistical analysis.*
 
 ---
 
@@ -112,7 +129,7 @@ It’s a glimpse into the future of healthcare: one where data drives better dec
 
 ## Final Thoughts ❤️
 
-This journey wouldn’t have been possible without the incredible collaboration of researchers, clinicians, and organizations worldwide. From tech partners like `QMENTA` and `AWS` to the patients who trusted us with their data—you made this vision a reality.
+This journey wouldn’t have been possible without the incredible collaboration of researchers, clinicians, and organizations worldwide.
 
 If you’re curious to dive deeper into the technical details or see the full results, check out our paper: [The Journey of Data Within a Global Data Sharing Initiative](https://doi.org/10.2196/48030) (JMIR Medical Informatics, 2023).
 
