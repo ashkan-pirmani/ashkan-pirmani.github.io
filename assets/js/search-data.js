@@ -60,11 +60,16 @@ ninja.data = [{
           description: "A human story of collaboration, innovation, and the magic of federated data analysis.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-fl4e-a-federated-learning-for-everyone-revolution-in-clinical-research",
-          title: 'FL4E - A Federated Learning For Everyone Revolution in Clinical Research',
-          description: "How FL4E is making clinical research more collaborative, inclusive, and privacy-focused.",
+            },},{id: "projects-fl4e-a-federated-learning-for-everyone-revolution-for-clinical-research",
+          title: 'FL4E - A Federated Learning For Everyone Revolution for Clinical Research',
+          description: "How FL4E is breaking barriers in clinical research through collaboration, privacy, and adaptability.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-predicting-ms-progression-with-personalized-federated-learning",
+          title: 'Predicting MS Progression with Personalized Federated Learning',
+          description: "How we used federated learning to make disability progression predictions in multiple sclerosis more accurate and secure.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
             },},{
         id: 'social-github',
         title: 'GitHub',
