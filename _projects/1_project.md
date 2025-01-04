@@ -5,13 +5,12 @@ description: A human story of collaboration, innovation, and the magic of federa
 img: assets/img/gdsi-logo.png
 importance: 2
 category: GDSI
-giscus_comments: true
+giscus_comments: false
 ---
 
 What happens when you try to solve a global health mystery using data? You get a journey full of collaboration, innovation, and a whole lot of learning. That’s exactly what we experienced while working on a project to better understand multiple sclerosis (MS) and its interaction with COVID-19.
 
 This is the story of how we connected the dots, shared the insights, and changed the way we think about healthcare data.
-
 
 <div style="text-align: center;">
   <img src="/assets/img/gdsi-infra.png" alt="Data Preprocessing Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
@@ -70,17 +69,14 @@ Here’s a look at how GDSI’s pipeline works:
 
 This diagram showcases the tools and technologies that power GDSI's federated model sharing, from Docker containers to Jupyter dashboards.
 
-
 <div style="text-align: center;">
   <img src="/assets/img/fed-pipeline.png" alt="Data Preprocessing Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 </div>
 *Figure 2: The latest federated pipeline. This is a container composed of 3 primary components. The first component is the base image, which forms the bedrock of the infrastructure. This base image uses Alpine Linux as its underlying operating system, which allows the container to be fine-tuned with other software development kits for further refinements and functionalities. The remaining 2 components, the backend and frontend, are constructed on top of this base image. The backend consists of a suite of Python scripts, which are tasked with data quality assessment, enhancement, cleaning, and analysis. These scripts collaboratively process the incoming mapped data, preparing it for subsequent analysis. By contrast, the frontend was crafted using Microsoft’s ASP.NET Core framework and the C# programming language. Within this pipeline, there is a customizable automation center module. This module can be adapted to meet the specific needs and requests of data partners. It also integrates Crontab, a tool that automates predefined tasks and outlines complex pipelines for execution at various intervals. The automation center module also links the container to the GitHub and Docker Hub version control systems. This connection ensures the use of the most recent scripts and codes published by data analysts. SDK: software development kit.*
 
-
 ### Data Sharing Models
 
 The visual below highlights the three main data-sharing approaches: Direct Entry, Core Data Set Sharing, and Federated Model Sharing.
-
 
 <div style="text-align: center;">
   <img src="/assets/img/gds-arch.png" alt="Data Preprocessing Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
@@ -90,7 +86,6 @@ The visual below highlights the three main data-sharing approaches: Direct Entry
 ### Data Processing Workflow
 
 Here’s how data moves through the system, with preprocessing, aggregation, and analysis steps all designed to ensure privacy and quality.
-
 
 <div style="text-align: center;">
   <img src="/assets/img/gdsi-flow.png" alt="Data Preprocessing Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">

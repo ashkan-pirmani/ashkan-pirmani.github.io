@@ -1,14 +1,12 @@
 ---
 layout: page
-title: Predicting MS Progression with Personalized Federated Learning
-description: How we used federated learning to make disability progression predictions in multiple sclerosis more accurate and secure.
-img: assets/img/fl_ms_progression.jpg
+title: Predicting MS Progression with Personalized Federated Learning 🧠🌍
+description:
+img:
 importance: 4
 category: PhD
-giscus_comments: true
+giscus_comments: false
 ---
-
-# Predicting MS Progression with Personalized Federated Learning 🧠🌍
 
 What if we could predict how multiple sclerosis (MS) progresses for each patient while keeping their data safe and secure? That’s the vision behind our latest research. Using **personalized federated learning (PFL)**, we created smarter, more tailored predictions without ever moving sensitive patient data. Here’s how it all came together.
 
@@ -93,6 +91,6 @@ The potential is enormous, and we’re just getting started.
 
 If you’re as excited about this as we are, check out the full paper for all the technical details:
 
-- **Paper**: [Personalized Federated Learning for MS Disability Prediction](https://github.com/ashkan-pirmani/FL-MS-RWD)
+- **Paper**: [Personalized Federated Learning for MS Disability Prediction]()
 
 Together, let’s reimagine what’s possible in personalized healthcare. 🚀
