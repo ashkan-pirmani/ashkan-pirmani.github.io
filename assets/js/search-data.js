@@ -66,8 +66,8 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-predicting-ms-progression-with-personalized-federated-learning",
-          title: 'Predicting MS Progression with Personalized Federated Learning',
-          description: "How we used federated learning to make disability progression predictions in multiple sclerosis more accurate and secure.",
+          title: 'Predicting MS Progression with Personalized Federated Learning 🧠🌍',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{
