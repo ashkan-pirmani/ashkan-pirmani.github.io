@@ -56,12 +56,12 @@ ninja.data = [{
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1/";
             },},{id: "projects-the-journey-of-data-within-a-global-data-sharing-initiative",
-          title: 'The Journey of Data Within a Global Data Sharing Initiative',
+          title: 'The Journey of Data Within a Global Data Sharing Initiative 🚀',
           description: "A human story of collaboration, innovation, and the magic of federated data analysis.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-fl4e-a-federated-learning-for-everyone-revolution-for-clinical-research",
-          title: 'FL4E - A Federated Learning For Everyone Revolution for Clinical Research',
+          title: 'FL4E - A Federated Learning For Everyone Revolution for Clinical Research 🌍🩺',
           description: "How FL4E is breaking barriers in clinical research through collaboration, privacy, and adaptability.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
