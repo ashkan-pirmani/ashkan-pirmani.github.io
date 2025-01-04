@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A collection of my cool projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "nav-repositories",
           title: "repositories",
           description: "",
@@ -48,12 +55,22 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1/";
+            },},{id: "projects-the-journey-of-data-within-a-global-data-sharing-initiative",
+          title: 'The Journey of Data Within a Global Data Sharing Initiative',
+          description: "A human story of collaboration, innovation, and the magic of federated data analysis.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_project/";
+            },},{id: "projects-fl4e-a-federated-learning-for-everyone-revolution-in-clinical-research",
+          title: 'FL4E - A Federated Learning For Everyone Revolution in Clinical Research',
+          description: "How FL4E is making clinical research more collaborative, inclusive, and privacy-focused.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/ashkan_pirmani", "_blank");
+          window.open("https://github.com/ashkan-pirmani", "_blank");
         },
       },{
         id: 'social-linkedin',
