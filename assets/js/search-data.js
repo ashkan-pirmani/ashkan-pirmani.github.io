@@ -117,13 +117,6 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=RC2DM7kAAAAJ", "_blank");
         },
       },{
-        id: 'social-work',
-        title: 'Work',
-        section: 'Socials',
-        handler: () => {
-          window.open("a.com", "_blank");
-        },
-      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
