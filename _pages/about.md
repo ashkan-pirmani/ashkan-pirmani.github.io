@@ -34,7 +34,7 @@ This approach doesn’t just safeguard privacy; it opens doors. Organizations ca
 
 The world is full of complex problems, and I believe the best solutions come from **collaboration**. But collaboration isn’t always easy, especially when sensitive data is involved. That’s why I love combining **technical innovation** with **practical problem-solving** to create tools that make working together possible—even when the odds are stacked against us. Whether it’s improving global data-sharing pipelines or designing tools for personalized predictions, I focus on creating solutions that are **inclusive, accessible, and meaningful**.
 
-Here are some highlights of my work:
+Here are some **highlights of my work** (check out more details on the [projects page](https://ashkan-pirmani.github.io/projects)):
 
 - Built a **federated, research-agnostic data analysis pipeline** for the **Global Data Sharing Initiative** on COVID-19 and MS, contributing to one of the **most comprehensive datasets** for these conditions. 🌍📊
 - Developed a **new federated learning approach** that enabled ML models to adapt to local datasets, significantly improving predictions like **disability progression** in MS. 🚀
