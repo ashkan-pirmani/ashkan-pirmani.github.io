@@ -24,7 +24,7 @@ But let me tell you, working with data isn’t as `straightforward` as it sounds
 
 > You’d think the solution would be `straightforward`: gather all the data into one place and get to work.
 
-But in reality, **centralizing data** is often out of the question. **Privacy concerns**, **ethical dilemmas**, **data ownership rules**, and layers of **administrative hurdles** stand in the way. It’s like trying to build the `puzzle` while someone keeps reminding you, _“You can’t touch the pieces”._
+But in `reality`, **centralizing data** is often out of the question. **Privacy concerns**, **ethical dilemmas**, **data ownership rules**, and layers of **administrative hurdles** stand in the way. It’s like trying to build the `puzzle` while someone keeps reminding you, _“You can’t touch the pieces”._
 
 So, how do we `solve` this? That’s where **Federated Learning (FL)** comes in.
 
@@ -33,8 +33,12 @@ So, how do we `solve` this? That’s where **Federated Learning (FL)** comes in.
 > This approach doesn’t just safeguard privacy; `it opens doors`. Organizations can `work together` without worrying about _sensitive information leaving their walls_, unlocking `insights` that were once impossible to achieve.
 > My research focused on `designing` and `implementing` FL techniques to tackle exactly these kinds of `challenges`, bringing together **innovation** and **practicality** to make this futuristic idea a reality.
 
-<div style="text-align: center; width: 100%; margin: 20px 0;">
+<!-- <div style="text-align: center; width: 100%; margin: 20px 0;">
   <img src="/assets/img/banner.svg" alt="Decorative Banner" style="width: 100%; height: 50px; display: block; border: none; margin: 0;">
+</div> -->
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/assets/img/banner.svg" alt="Decorative Banner" style="width: 100%; height: 30px; display: block; padding: 0; margin: 0;">
 </div>
 
 ## Why I Do What I Do 👨🏻‍💻
