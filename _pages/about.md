@@ -33,9 +33,10 @@ So, how do we `solve` this? That’s where **Federated Learning (FL)** comes in.
 > This approach doesn’t just safeguard privacy; `it opens doors`. Organizations can `work together` without worrying about _sensitive information leaving their walls_, unlocking `insights` that were once impossible to achieve.
 > My research focused on `designing` and `implementing` FL techniques to tackle exactly these kinds of `challenges`, bringing together **innovation** and **practicality** to make this futuristic idea a reality.
 
-<div style="text-align: center; width: 100%; margin: 0 auto;">
-  <img src="/assets/img/banner.svg" alt="Decorative Banner" style="width: 100%; height: auto; display: block; border: none; padding: 0; margin: 0;">
+<div style="text-align: center; width: 100%; margin: 20px 0;">
+  <img src="/assets/img/banner.svg" alt="Decorative Banner" style="width: 100%; height: 50px; display: block; border: none; margin: 0;">
 </div>
+
 ## Why I Do What I Do 👨🏻‍💻
 
 The world is full of complex problems, and I believe the best solutions come from **collaboration**. But collaboration isn’t always easy, especially when sensitive data is involved. That’s why I love combining **technical innovation** with **practical problem-solving** to create tools that make working together possible—even when the odds are stacked against us. Whether it’s improving global data-sharing pipelines or designing tools for personalized predictions, I focus on creating solutions that are **inclusive, accessible, and meaningful**.
