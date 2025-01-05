@@ -16,6 +16,40 @@ social: true # includes social icons at the bottom of the page
 
 # Hi there! 👋🏼
 
+I love turning **data** into stories that matter, especially in fields where `sensitive information` demands thoughtful handling and innovative solutions. I’m driven by the challenge of making data useful while navigating the **ethical, legal, and practical complexities** of working with it.
+
+Most recently, I completed a `double PhD` in Belgium 🇧🇪 at `KU Leuven` and `Hasselt University`, where I worked on making **real-world data (RWD)** more `accessible` and `actionable` to derive meaningful `insights` from it.
+
+But let me tell you, working with data isn’t as `straightforward` as it sounds. It often feels like trying to solve a `jigsaw puzzle`, but this isn’t your typical puzzle. Imagine the pieces are scattered across different locations, some of them locked away in drawers labeled **“private”**, and others so rare they might as well be one-of-a-kind. Now, add a rule: you’re not allowed to move any pieces from their original location. That’s what working with data in fields like **rare diseases** or **low-prevalence conditions** feels like. Every single piece matters, but putting them together is far from simple.
+
+You’d think the solution would be straightforward: gather all the data into one place and get to work. But in reality, **centralizing data** is often out of the question. **Privacy concerns**, **ethical dilemmas**, **data ownership rules**, and layers of **administrative hurdles** stand in the way. It’s like trying to build the puzzle while someone keeps reminding you, “You can’t touch the pieces.”
+
+So, how do we solve this? That’s where **Federated Learning (FL)** comes in. Think of FL as a way to build the puzzle together, but with a twist: everyone works on their pieces separately, sharing just enough hints to complete the bigger picture. With FL, **machine learning (ML)** models can be trained on decentralized data without ever moving the data itself. It’s a bit like a **long-distance relationship**—collaborating while keeping what’s personal safe and secure.
+
+This approach doesn’t just safeguard privacy; it opens doors. Organizations can work together without worrying about sensitive information leaving their walls, unlocking insights that were once impossible to achieve. My research focused on designing and implementing FL techniques to tackle exactly these kinds of challenges—bringing together **innovation** and **practicality** to make this futuristic idea a reality.
+
+---
+
+## Why I Do What I Do 👨🏻‍💻
+
+The world is full of complex problems, and I believe the best solutions come from **collaboration**. But collaboration isn’t always easy, especially when sensitive data is involved. That’s why I love combining **technical innovation** with **practical problem-solving** to create tools that make working together possible—even when the odds are stacked against us. Whether it’s improving global data-sharing pipelines or designing tools for personalized predictions, I focus on creating solutions that are **inclusive, accessible, and meaningful**.
+
+Here are some highlights of my work:
+
+- Built a **federated, research-agnostic data analysis pipeline** for the **Global Data Sharing Initiative** on COVID-19 and MS, contributing to one of the **most comprehensive datasets** for these conditions. 🌍📊
+- Developed a **new federated learning approach** that enabled ML models to adapt to local datasets, significantly improving predictions like **disability progression** in MS. 🚀
+- Introduced the concept of a **“degree of federation”**, offering organizations a flexible way to balance **privacy**, **practicality**, and **collaboration**. 🎯
+- Created **FL4E (Federated Learning For Everyone)**, a framework bridging **centralized** and **decentralized data analysis** for real-world applications. 🔐🌐
+- Pioneered a study that predicted **disability progression** in MS for over **26,000 patients**, using one of the **largest routine clinical datasets** available—all while keeping data secure. 🧠✨
+
+---
+
+## Let’s Connect! 🌟
+
+I’m always excited to collaborate with people who share my passion for turning **data into insights** that make a difference. If you’re working on something where real-world data and **AI/ML** could play a role—whether it’s in healthcare, finance, or beyond—I’d love to chat and explore ways we can team up to create meaningful impact. 😊
+
+<!-- # Hi there! 👋🏼
+
 I am passionate about bridging the gap between **data science** and **healthcare innovation**, combining technical expertise with practical solutions to tackle real-world challenges. Most recently, I completed a `double PhD` at `KU Leuven` and `Hasselt University`, where my focus was on making **real-world data (RWD)** both accessible and actionable. 💡
 
 In healthcare, **data fragmentation** and **privacy concerns** are major obstacles to generating meaningful insights. My work explored how tools like `federated data analysis` can enable secure collaboration without compromising privacy. For example, I contributed to a **research-agnostic data analysis pipeline** that powered the **Global Data Sharing Initiative** for COVID-19 and **Multiple Sclerosis (MS)**, assembling the `largest-ever dataset` for MS and COVID-19 🌍📊.
@@ -41,40 +75,4 @@ Here are some highlights of my work:
 ## Let’s Connect! 🌟
 
 I believe thoughtful, **collaborative innovation** can transform not just healthcare, but other industries too. Whether you are in healthcare, finance, or any field where **real-world data** can make a difference, I’d love to connect and share ideas. Let’s work together to turn data into actionable insights that create real impact! 😊
-
-<!-- # Hi there! 👋🏼
-
-I am passionate about bridging the gap between **data science** and **healthcare innovation**, and my journey so far has been shaped by the challenges and rewards of tackling real-world problems with practical solutions. Most recently, I completed a `double PhD` at `KU Leuven` and `Hasselt University`, where my work focused on making **real-world data (RWD)** not just accessible but also **actionable**. 💡
-
-In healthcare, **data fragmentation** and **privacy concerns** are massive hurdles to generating meaningful insights. My research explored how technologies like `federated data analysis` can enable collaboration without compromising data privacy. For instance,  I contributed to the development of a novel, `research-agnostic data analysis pipeline` that successfully powered the **Global Data Sharing Initiative** for COVID-19 and **Multiple Sclerosis (MS)**, assembling the `largest-ever dataset` for MS and COVID-19 🌍📊.
-Or, I have designed a **new Federated Learning (FL) schema and algorithm** that significantly `enhanced predictive performance` by enabling `global models` to `adapt` to local datasets. This innovation was central to **FL-MS-RWD**, a **pioneering study** that used FL to predict disability progression in MS, leveraging one of the `largest routine clinical datasets` available.
-
----
-
-## Why I Do What I Do 👨🏻‍💻
-`Collaboration drives me`. I thrive in **diverse, multidisciplinary teams**, blending **technical innovation** with **practical implementation** to solve complex problems. Whether it is predicting MS outcomes, improving global data-sharing pipelines, or designing **federated ecosystems**, I am deeply committed to making technologies more **inclusive, accessible, and impactful.**
-
-Some of my proudest contributions include:
-- Leading the **Global Data Sharing Initiative for COVID-19 and MS**, assembling the `largest dataset` of MS and COVID-19 cases, proving the power of collaborative healthcare. 🌏📊
-- Developing **FL4E (Federated Learning For Everyone)**, a `flexible framework` that bridges centralized and decentralized data analysis, tailored to real-world needs. 🔐🌐
-- Innovating **personalized FL models** that adapt to diverse datasets, `outperforming conventional methods` in both accuracy and privacy. 🧠✨
-- Introducing the concept of the **“degree of federation”**, enabling organizations to balance privacy and practicality based on their goals. 🎯
-- Used routine clinical data to `predict` **disability progression** in MS for over **26,000 patients**—one of the largest datasets of its kind.
-- Demonstrated that **personalized federated models** not only preserve privacy but also outperform traditional centralized methods, marking a milestone in the use of RWD for clinical research. 🧠✨
-
-
----
-
-## Let’s Connect! 🌟
-I’m driven by the belief that thoughtful, **collaborative innovation** can transform industries. Whether you’re in healthcare, finance, or another field where **real-world data** is key, I’d love to exchange ideas and explore ways to collaborate. Let’s turn data into meaningful, actionable insights together! 😊 -->
-
-<!-- Hello 👋🏼!
-
-I recently completed a `double PhD` at `KU Leuven` and `Hasselt University`, where my work centered on making data more `accessible` and `impactful` in healthcare, while also deriving `actionable insights` to drive better outcomes.
-
-
-My background in `Industrial Engineering` and `Business Administration` gives me a unique perspective on combining `technical expertise` with `practical solutions`, particularly in `privacy-preserving data analysis`, such as `federated learning`.
-
-Beyond research, I enjoy collaborating with `diverse teams` to bring fresh insights to complex challenges. My goal is to bridge `theory` and `real-world application`, focusing on `inclusive`, `cross-disciplinary approaches` that truly make a difference in `patient care`.
-
-Whether exploring new `Machine Learning Operations (MLOps)` strategies or developing `data-sharing pipelines`, I am always driven by the belief that thoughtful, `collaborative innovation` can advance not only healthcare but also other critical domains, creating meaningful and lasting impact across industries. -->
+ -->
