@@ -26,17 +26,16 @@ But let me tell you, working with data isn’t as `straightforward` as it sounds
 
 But in reality, **centralizing data** is often out of the question. **Privacy concerns**, **ethical dilemmas**, **data ownership rules**, and layers of **administrative hurdles** stand in the way. It’s like trying to build the `puzzle` while someone keeps reminding you, _“You can’t touch the pieces”._
 
-So, how do we `solve` this? That’s where **Federated Learning (FL)** comes in. Think of FL as a way to build the puzzle `together`, but with a twist: `everyone` works on their pieces `separately`, sharing just `enough hints` to complete the bigger picture. With FL, **machine learning (ML)** models can be trained on `decentralized` data without ever `moving` the data itself. It’s a bit like a **long-distance relationship**, `collaborating` while keeping what’s personal `safe` and `secure`.
+So, how do we `solve` this? That’s where **Federated Learning (FL)** comes in.
 
-This approach doesn’t just safeguard privacy; `it opens doors`. Organizations can `work together` without worrying about _sensitive information leaving their walls_, unlocking `insights` that were once impossible to achieve.
-My research focused on `designing` and `implementing` FL techniques to tackle exactly these kinds of `challenges`, bringing together **innovation** and **practicality** to make this futuristic idea a reality.
+> Think of FL as a way to build the puzzle `together`, but with a twist: `everyone` works on their pieces `separately`, sharing just `enough hints` to complete the bigger picture. With FL, **machine learning (ML)** models can be trained on `decentralized` data without ever `moving` the data itself.
+> It’s a bit like a **long-distance relationship**, `collaborating` while keeping what’s personal `safe` and `secure`.
+> This approach doesn’t just safeguard privacy; `it opens doors`. Organizations can `work together` without worrying about _sensitive information leaving their walls_, unlocking `insights` that were once impossible to achieve.
+> My research focused on `designing` and `implementing` FL techniques to tackle exactly these kinds of `challenges`, bringing together **innovation** and **practicality** to make this futuristic idea a reality.
 
----
-
-<div style="text-align: center;">
-  <img src="/assets/img/banner.svg" alt="Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+<div style="text-align: center; width: 100%; margin: 0 auto;">
+  <img src="/assets/img/banner.png" alt="Decorative Banner" style="width: 100%; height: auto; display: block; border: none; padding: 0; margin: 0;">
 </div>
-
 ## Why I Do What I Do 👨🏻‍💻
 
 The world is full of complex problems, and I believe the best solutions come from **collaboration**. But collaboration isn’t always easy, especially when sensitive data is involved. That’s why I love combining **technical innovation** with **practical problem-solving** to create tools that make working together possible—even when the odds are stacked against us. Whether it’s improving global data-sharing pipelines or designing tools for personalized predictions, I focus on creating solutions that are **inclusive, accessible, and meaningful**.
