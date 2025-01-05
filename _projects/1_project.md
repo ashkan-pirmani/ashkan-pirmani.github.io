@@ -35,6 +35,11 @@ So, we had to ask ourselves: **How can we make sense of all this data without co
 
 To tackle this, we came up with a **three-layer hybrid data acquisition architecture**. The goal was to be **inclusive**—gathering as much data as possible while respecting the diverse policies and constraints of data custodians.
 
+<div style="text-align: center;">
+  <img src="/assets/img/gdsi-flow.png" alt="Data Preprocessing Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+</div>
+*Figure 2: The global data sharing initiative’s end-to-end real-world data analysis pipeline. Step I illustrates the standardization process, which serves as the foundation of this architecture. In this phase, data custodians are requested to map their data to the “COVID-19 in multiple sclerosis core data set” (here referred to as the data dictionary). This process applies only to the core data set and federated model sharing registries, as direct entry is already embedded with a data dictionary via the web form. Step II involves the data acquisition pipeline, featuring distinct levels of data acquisition that depend on the data holder’s willingness and internal policies, all conducted in line with ethical and legal standards. Direct entry, core data set sharing, and federated model sharing constitute the 3 data stream levels. The first 2 levels interact directly with a central platform where the core dataset is shared as static files, in this instance, Comma Separated Values (CSV), whereas federated registries necessitate additional steps before submitting outcomes to the central platform. To incorporate federated registries into the pipeline, predefined queries are dispatched alongside Docker containers to the local side of the registries. The results of these containers are then shipped back to the central platform. In step III, data from different data holders are stored in separate layers to facilitate the next data integration process. Data integration, the subsequent step in the pipeline, entails consolidating data from distinct layers into a comprehensive data set. Step IV emphasizes the utilization of the integrated data set for further data exploration and analysis. Step V highlights the local dashboard, which serves as a quality check, enabling data providers to give feedback on their uploaded data as an additional sanity check. Step VI underscores the online dashboard that has been fed by the integrated data set, utilized by the taskforce during the development of the research questions to ascertain the feasibility of the study and to monitor the data being collected. In step VII, a Jupyter Notebook is provided to the data analysis team, securely connected to the integrated data set, facilitating statistical analysis.*
+
 Here’s why the hybrid approach mattered:
 
 - It recognized that not all data holders could contribute in the same way.
@@ -56,6 +61,11 @@ Institutions with pre-approved datasets could share their anonymized data direct
 ### 3️⃣ **Federated Model Sharing**
 
 For institutions with stricter data-sharing policies, this was the game-changer. Instead of transferring sensitive data, we sent analysis scripts (using tools like `Docker`) to their servers. These scripts ran locally, created aggregated results, and sent them back for central analysis. This way, institutions participated without ever exposing raw data. 🧠
+
+<div style="text-align: center;">
+  <img src="/assets/img/gds-arch.png" alt="Data Preprocessing Workflow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+</div>
+*Figure 3: The global data sharing initiative data streams detailing the initiative’s inclusive approach through a hybrid 3-layer data acquisition architecture: (1) direct entry, where individuals upload their data via a web-based form; (2) core data set sharing, where registries upload patient-level data to the central platform under signed data transfer agreements and ethics approvals; and (3) federated model sharing, allowing registries with restrictive policies to participate without directly submitting patient-level data to the central platform.*
 
 ---
 

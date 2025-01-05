@@ -20,13 +20,17 @@ I love turning **data** into stories that matter, especially in fields where `se
 
 Most recently, I completed a `double PhD` in Belgium 🇧🇪 at `KU Leuven` and `Hasselt University`, where I worked on making **real-world data (RWD)** more `accessible` and `actionable` to derive meaningful `insights` from it.
 
-But let me tell you, working with data isn’t as `straightforward` as it sounds. It often feels like trying to solve a `jigsaw puzzle`, but this isn’t your typical puzzle. Imagine the pieces are scattered across different locations, some of them locked away in drawers labeled **“private”**, and others so rare they might as well be one-of-a-kind. Now, add a rule: you’re not allowed to move any pieces from their original location. That’s what working with data in fields like **rare diseases** or **low-prevalence conditions** feels like. Every single piece matters, but putting them together is far from simple.
+But let me tell you, working with data isn’t as `straightforward` as it sounds. It often feels like trying to solve a `jigsaw puzzle`, but this isn’t your typical puzzle. Imagine the pieces are `scattered` across different locations, some of them `locked away` in drawers labeled **“private”**, and others so `rare` they might as well be `one-of-a-kind`. Now, add a rule: you’re `not allowed` to move any pieces from their `original location`. That’s what working with data in fields like **rare diseases** or **low-prevalence conditions** feels like. `Every single piece matters`, _but putting them together is far from simple_.
 
-You’d think the solution would be straightforward: gather all the data into one place and get to work. But in reality, **centralizing data** is often out of the question. **Privacy concerns**, **ethical dilemmas**, **data ownership rules**, and layers of **administrative hurdles** stand in the way. It’s like trying to build the puzzle while someone keeps reminding you, “You can’t touch the pieces.”
+You’d think the solution would be `straightforward`:
 
-So, how do we solve this? That’s where **Federated Learning (FL)** comes in. Think of FL as a way to build the puzzle together, but with a twist: everyone works on their pieces separately, sharing just enough hints to complete the bigger picture. With FL, **machine learning (ML)** models can be trained on decentralized data without ever moving the data itself. It’s a bit like a **long-distance relationship**—collaborating while keeping what’s personal safe and secure.
+> gather all the data into one place and get to work.
+> But in reality, **centralizing data** is often out of the question. **Privacy concerns**, **ethical dilemmas**, **data ownership rules**, and layers of **administrative hurdles** stand in the way. It’s like trying to build the `puzzle` while someone keeps reminding you, _“You can’t touch the pieces”._
 
-This approach doesn’t just safeguard privacy; it opens doors. Organizations can work together without worrying about sensitive information leaving their walls, unlocking insights that were once impossible to achieve. My research focused on designing and implementing FL techniques to tackle exactly these kinds of challenges—bringing together **innovation** and **practicality** to make this futuristic idea a reality.
+So, how do we `solve` this? That’s where **Federated Learning (FL)** comes in. Think of FL as a way to build the puzzle `together`, but with a twist: `everyone` works on their pieces `separately`, sharing just `enough hints` to complete the bigger picture. With FL, **machine learning (ML)** models can be trained on `decentralized` data without ever `moving` the data itself. It’s a bit like a **long-distance relationship**, `collaborating` while keeping what’s personal `safe` and `secure`.
+
+This approach doesn’t just safeguard privacy; `it opens doors`. Organizations can `work together` without worrying about _sensitive information leaving their walls_, unlocking `insights` that were once impossible to achieve.
+My research focused on `designing` and `implementing` FL techniques to tackle exactly these kinds of `challenges`, bringing together **innovation** and **practicality** to make this futuristic idea a reality.
 
 ---
 

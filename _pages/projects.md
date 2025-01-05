@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A collection of my cool projects.
+description: A collection of my cool projects (Work In Progress).
 nav: true
 nav_order: 3
-display_categories: [GDSI, PhD]
+display_categories: [PhD]
 horizontal: false
 ---
 
