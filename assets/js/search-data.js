@@ -62,7 +62,7 @@ ninja.data = [{
           title: '🧠 ECTRIMS 2024 🗓️ When: September 2024 📍 Where: Copenhagen, Denmark 🇩🇰 🎤...',
           description: "",
           section: "News",},{id: "news-dr-doctor-squared-yes-you-heard-it-right-click-on-me-for-more-detailed-info",
-          title: '🎓 Dr² (Doctor Squared)- Yes, you heard it right! Click on me for...',
+          title: '🎓 Dr² (Doctor Squared) – Yes, you heard it right! Click on me...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1/";
