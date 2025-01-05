@@ -16,7 +16,7 @@ social: true # includes social icons at the bottom of the page
 
 # Hi there! 👋🏼
 
-I love turning **data** into stories that matter, especially in fields where `sensitive information` demands thoughtful handling and innovative solutions. I’m driven by the challenge of making data useful while navigating the **ethical, legal, and practical complexities** of working with it.
+I love turning **data** into stories that `matter`, especially in fields where `sensitive information` demands `thoughtful` handling and `innovative` solutions. I’m driven by the challenge of making `data` useful while navigating the **ethical, legal, and practical complexities** of working with it.
 
 Most recently, I completed a `double PhD` in Belgium 🇧🇪 at `KU Leuven` and `Hasselt University`, where I worked on making **real-world data (RWD)** more `accessible` and `actionable` to derive meaningful `insights` from it.
 
@@ -34,7 +34,7 @@ So, how do we `solve` this? That’s where **Federated Learning (FL)** comes in.
 > My research focused on `designing` and `implementing` FL techniques to tackle exactly these kinds of `challenges`, bringing together **innovation** and **practicality** to make this futuristic idea a reality.
 
 <div style="text-align: center; width: 100%; margin: 0 auto;">
-  <img src="/assets/img/banner.png" alt="Decorative Banner" style="width: 100%; height: auto; display: block; border: none; padding: 0; margin: 0;">
+  <img src="/assets/img/banner.svg" alt="Decorative Banner" style="width: 100%; height: auto; display: block; border: none; padding: 0; margin: 0;">
 </div>
 ## Why I Do What I Do 👨🏻‍💻
 

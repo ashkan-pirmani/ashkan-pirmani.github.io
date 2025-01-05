@@ -4,12 +4,12 @@ permalink: /teaching/
 title: teaching
 # description: Materials for courses you taught. Replace this text with your description.
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
-🌟 I'm proud to be an active teaching member for the _“Data Science in Healthcare”_ course, part of the Healthcare Engineering program at Hasselt University 🏫, for the 2023–2024 academic year 📅. It’s exciting to guide students as they explore the intersection of healthcare and data science.
+🌟 I'm proud to be teaching member for the _“Data Science in Healthcare”_ course, part of the **Healthcare Engineering program** at Hasselt University 🏫 during the 2022-2023 and 2023–2024 academic year 📅. Guiding students as they dive into the fascinating intersection of healthcare and data science has been an incredible journey. Watching their curiosity grow as they tackle real-world challenges with data-driven solutions is truly inspiring! 💡✨
 
-👨‍🏫 At KU Leuven, I’ve had the privilege of supervising **7 Master’s theses in Artificial Intelligence** 🧠. These projects tackled some fascinating topics in federated learning, model personalization, and predictive analytics, including:
+👨‍🏫 At KU Leuven, I’ve had the privilege of supervising **7 Master’s theses in Artificial Intelligence** 🧠. These projects explored cutting-edge topics in federated learning, model personalization, and predictive analytics. Here are some of the standout contributions:
 
 - 🏥 **Predicting Hospitalized Patients**: Comparing federated learning with pooled and local datasets 📊.
 - 📂 **Data Partitioning Scenarios**: Studying how data distribution affects training accuracy 📈.
@@ -19,4 +19,4 @@ nav_order: 6
 - 🎯 **Fine-Tuning Global Models**: Tweaking global federated learning models to boost performance 🔧.
 - 🧬 **Early Disease Detection**: Using shallow whole genome sequencing (sWGS) of cell-free DNA (cfDNA) for advanced diagnostics 🔬.
 
-💡 For me, it’s all about advancing research in Artificial Intelligence 🤖 and healthcare data science 🩺 while mentoring the next generation of professionals and researchers 🌱. Watching students grow and push the boundaries of innovation is incredibly rewarding! 🔍
+For more information feel free to reach out!
