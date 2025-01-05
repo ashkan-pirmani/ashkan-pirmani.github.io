@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "news-mie-2024-️-when-august-2024-where-athens-greece-what-presented-a-paper-titled-unlocking-the-power-of-real-world-data-a-framework-for-sustainable-healthcare-focus-proposed-a-practical-framework-to-leverage-real-world-data-for-achieving-sustainable-healthcare-systems-and-driving-impactful-insights",
+        },{id: "post-a-post-with-code",
+      
+        title: "a post with code",
+      
+      description: "an example of a blog post with some code",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/sample-posts/2015/07/15/code.html";
+        
+      },
+    },{id: "news-mie-2024-️-when-august-2024-where-athens-greece-what-presented-a-paper-titled-unlocking-the-power-of-real-world-data-a-framework-for-sustainable-healthcare-focus-proposed-a-practical-framework-to-leverage-real-world-data-for-achieving-sustainable-healthcare-systems-and-driving-impactful-insights",
           title: '💡 MIE 2024 🗓️ When: August 2024 📍 Where: Athens, Greece 🇬🇷 🎤...',
           description: "",
           section: "News",},{id: "news-ectrims-2024-️-when-september-2024-where-copenhagen-denmark-what-presented-an-abstract-and-poster-titled-transforming-multiple-sclerosis-research-advancing-disability-progression-insights-through-practical-and-precise-federated-learning-using-real-world-data-focus-showcased-the-potential-of-federated-learning-for-advancing-insights-into-disability-progression-in-multiple-sclerosis-using-real-world-data",
