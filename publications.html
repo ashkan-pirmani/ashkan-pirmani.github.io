@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications. Ashkan Pirmani</title>
+<meta name="description" content="Publications by Ashkan Pirmani on federated learning, real world data and multiple sclerosis research.">
+<link rel="canonical" href="https://ashkan-pirmani.github.io/publications.html">
+<meta name="author" content="Ashkan Pirmani">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Publications. Ashkan Pirmani">
+<meta property="og:description" content="Publications by Ashkan Pirmani on federated learning, real world data and multiple sclerosis research.">
+<meta property="og:url" content="https://ashkan-pirmani.github.io/publications.html">
+<meta property="og:image" content="https://ashkan-pirmani.github.io/assets/img/og-publications.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Title card for Publications. Ashkan Pirmani, on ashkan-pirmani.github.io">
+<meta property="og:site_name" content="Ashkan Pirmani">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Publications. Ashkan Pirmani">
+<meta name="twitter:description" content="Publications by Ashkan Pirmani on federated learning, real world data and multiple sclerosis research.">
+<meta name="twitter:image" content="https://ashkan-pirmani.github.io/assets/img/og-publications.jpg">
+<meta name="twitter:image:alt" content="Title card for Publications. Ashkan Pirmani, on ashkan-pirmani.github.io">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111111'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial,sans-serif' font-size='20' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/img/icon.png">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+<style>
+/* THE CURTAIN.
+   Inlined in the head so it paints on the first frame with no flash of the page
+   behind it. It takes itself down with a CSS animation, so JavaScript being off
+   never traps anyone. JavaScript only picks the line and skips the whole thing
+   after the first page of a visit.
+
+   The red rule is the point of it. It draws out under the name, holds while you
+   read, then runs the full width of the screen and lands at the top of the page
+   as the stripe that is there on every page anyway. The curtain does not just
+   disappear; it turns into the site. */
+#curtain{
+  position:fixed;inset:0;z-index:999;overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:var(--paper,#fff);
+  animation:c-out .6s cubic-bezier(.65,0,.35,1) 2.2s forwards;
+}
+#curtain .cw{
+  font-weight:800;letter-spacing:-.035em;line-height:1;
+  font-size:clamp(2.1rem,7.4vw,4rem);color:var(--ink,#0A0A0A);
+  opacity:0;animation:c-rise .66s cubic-bezier(.16,1,.3,1) .07s forwards;
+}
+/* The divider, and the whole idea of the curtain. A grey track with a red fill
+   that draws left to right, holds while you read, then runs the full width of
+   the screen and travels up to sit where the red stripe sits on every page.
+   The curtain does not disappear. It turns into the site. */
+#curtain .cr{
+  position:relative;overflow:hidden;
+  width:min(78vw,560px);height:3px;margin:28px 0 26px;
+  background:var(--hair,#D6D6D6);opacity:0;
+  animation:c-fade .44s ease .18s forwards,
+            c-sweep .66s cubic-bezier(.7,0,.3,1) 1.93s forwards;
+}
+#curtain .cr i{
+  position:absolute;inset:0 auto 0 0;width:0;background:var(--red,#CE2F19);
+  animation:c-draw .66s cubic-bezier(.16,1,.3,1) .24s forwards;
+}
+#curtain .cq{
+  max-width:34ch;text-align:center;text-wrap:balance;
+  font-size:clamp(.95rem,2.7vw,1.12rem);line-height:1.62;color:var(--ink-2,#3A3A3A);
+  opacity:0;animation:c-rise .66s cubic-bezier(.16,1,.3,1) .51s forwards;
+}
+#curtain .ca{
+  margin-top:18px;max-width:min(90vw,40ch);text-align:center;text-wrap:balance;
+  font-size:clamp(.58rem,1.9vw,.68rem);letter-spacing:.14em;text-transform:uppercase;
+  line-height:1.7;color:var(--mute,#8A8A86);
+  opacity:0;animation:c-fade .55s ease .92s forwards;
+}
+@keyframes c-rise{from{opacity:0;transform:translateY(14px);filter:blur(10px);}
+                  to{opacity:1;transform:none;filter:blur(0);}}
+@keyframes c-fade{to{opacity:1;}}
+@keyframes c-draw{to{width:100%;}}
+@keyframes c-sweep{
+  to{width:100%;background:var(--red,#CE2F19);
+     transform:translateY(calc(-50vh + 27px));}
+}
+@keyframes c-out{to{opacity:0;visibility:hidden;}}
+
+/* the page resolves out of a blur behind it */
+body>main,body>nav,body>footer{animation:c-page .72s cubic-bezier(.16,1,.3,1) 2.09s backwards;}
+@keyframes c-page{from{opacity:0;filter:blur(11px);}to{opacity:1;filter:blur(0);}}
+
+html.seen #curtain{display:none;}
+html.seen body>main,html.seen body>nav,html.seen body>footer{animation:none;}
+@media (prefers-reduced-motion:reduce){
+  #curtain{animation:c-out .2s linear .05s forwards;}
+  #curtain .cw,#curtain .cq,#curtain .ca{animation:none;opacity:1;}
+  #curtain .cr{animation:none;opacity:1;}
+  #curtain .cr i{animation:none;width:100%;}
+  body>main,body>nav,body>footer{animation:none;}
+}
+</style>
+<script>
+(function(){
+  /* Once per visit. A curtain on every click is a toll, not a welcome. */
+  try{ if(sessionStorage.getItem('seen')){document.documentElement.className+=' seen';return;}
+       sessionStorage.setItem('seen','1'); }catch(e){}
+  /* Each line stands on its own. A visitor sees exactly one of these, cold,
+     before they have read a word of the site. */
+  var L=[
+    "The hard part is not the model.",
+    "What moves, and what stays?",
+    "The data stays. The method moves.",
+    "Privacy is part of the design.",
+    "If it needs me to run, it is not finished.",
+    "If every site needs an engineer, it will not scale.",
+    "Rare disease has no data to waste.",
+    "More sites can matter more than a better model.",
+    "Different systems. Same question.",
+    "Thirty countries. Thirty systems. One question.",
+    "Scaling code is easier than scaling agreement.",
+    "A paper is not the end of the work.",
+    "Real world data is messy. That is the real world.",
+    "Not every problem needs a better model.",
+    "Sometimes access is the real bottleneck.",
+    "One definition can be harder than one model.",
+    "Patient data does not need to travel to take part.",
+    "Every site you leave out changes the answer."
+  ];
+  document.addEventListener('DOMContentLoaded',function(){
+    var q=document.getElementById('cq');
+    if(q) q.textContent=L[Math.floor(Math.random()*L.length)];
+    var c=document.getElementById('curtain');
+    if(!c) return;
+    /* Anyone who does not want to wait should not have to. Any click, key,
+       scroll or touch takes it down at once. */
+    var gone=false;
+    function drop(){
+      if(gone) return; gone=true;
+      c.style.transition='opacity .28s ease';
+      c.style.opacity='0';
+      setTimeout(function(){if(c.parentNode)c.remove();},300);
+    }
+    ['click','keydown','wheel','touchstart'].forEach(function(ev){
+      document.addEventListener(ev,drop,{once:true,passive:true});
+    });
+    /* Belt and braces: if an animation never fires, take it down anyway. */
+    setTimeout(drop,3500);
+  });
+})();
+</script>
+
+<link rel="stylesheet" href="assets/style.css?v=d12f81a2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ashkan Pirmani","url":"https://ashkan-pirmani.github.io/","image":"https://ashkan-pirmani.github.io/assets/img/portrait.jpg","jobTitle":"Applied Machine Learning Scientist","description":"Applied machine learning scientist working on real world evidence in health. Gets answers out of patient records that cannot be gathered in one place, using federated methods, the systems around them, and the governance that lets registries learn together.","affiliation":[{"@type":"CollegeOrUniversity","name":"KU Leuven","url":"https://www.kuleuven.be/"},{"@type":"CollegeOrUniversity","name":"Hasselt University","url":"https://www.uhasselt.be/"}],"knowsAbout":["Real World Evidence","Applied Machine Learning","Federated Learning","OMOP Common Data Model","OHDSI","Observational Research","Evidence Generation","Cohort Definition","Phenotyping","Data Quality","Data Feasibility","Registry Harmonization","Personalized Federated Learning","Real World Data","Observational Data","Privacy-Preserving Machine Learning","Health Data Science","Multiple Sclerosis Research","FAIR Data","PyTorch","Flower","Survival Analysis","Python","Distributed Machine Learning"],"sameAs":["https://scholar.google.com/citations?user=RC2DM7kAAAAJ","https://github.com/ashkan-pirmani","https://www.linkedin.com/in/ashkan-p-3b8a8896/","https://www.researchgate.net/profile/Ashkan-Pirmani"]}</script>
+</head>
+<body>
+<div id="curtain" aria-hidden="true">
+  <span class="cw">Ashkan Pirmani</span>
+  <span class="cr"><i></i></span>
+  <span class="cq" id="cq">The data stays. The method moves.</span>
+  <span class="ca">Applied machine learning · Real world evidence · Health data</span>
+</div>
+<a class="skip" href="#top">Skip to the content</a>
+<nav class="topbar show" id="topbar" aria-label="Sections">
+  <div class="container topbar-in">
+    <span class="tb-name"><a href="index.html">Ashkan Pirmani</a></span>
+    <span class="tb-links">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="field.html">Background</a>
+      <a href="talks.html">Talks</a>
+      <a href="cv.html">CV</a>
+      <a href="index.html#contact">Contact</a>
+    </span>
+  </div>
+</nav>
+
+<main id="top" tabindex="-1">
+  <header class="page-head">
+    <div class="container">
+      <a class="back" href="index.html">Back to home</a>
+      <h1>Publications</h1>
+      <p>Newest first. Every entry says what it is: a journal paper, a conference abstract, a
+        chapter, a preprint or the thesis. Counting them together would flatter the list, so the
+        page does not. Generated from the bibliography file, so adding a paper there adds it here.</p>
+    </div>
+  </header>
+
+  <section class="band sec">
+    <div class="container grid">
+      <div class="col-label"><p class="lab"><span class="num">01</span><span class="rule"></span><span class="txt">Full list</span></p></div>
+      <div class="col-main">
+        <h2 class="head">Everything, newest first</h2>
+        <div class="pubs">
+        <a class="pub" href="https://doi.org/10.48550/arXiv.2606.23500">
+          <span class="y"><span class="yearmark">2026</span></span>
+          <span>
+            <span class="t">Development and Design of FLKit: A Structured Onboarding Toolkit for Federated Learning in Health and Life Sciences<span class="bibnote kind">Preprint</span><span class="bibnote sel">Selected</span><span class="bibnote">FLkit</span></span>
+            <span class="s"><i>arXiv preprint arXiv:2606.23500</i>. Pirmani, Vermeulen, Vinterhalter, Geys, Faes, Ali, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://lirias.kuleuven.be/4390136">
+          <span class="y"><span class="yearmark">2025</span></span>
+          <span>
+            <span class="t">FLoRank: adaptive structured personalisation for federated prediction of disability progression in multiple sclerosis<span class="bibnote kind">Conference</span><span class="bibnote sel">Selected</span><span class="bibnote">FLoRank</span></span>
+            <span class="s"><i>ECTRIMS 2025, Multiple Sclerosis Journal 31(3 suppl)</i> 491-492. Pirmani, Moreau, Peeters</span>
+          </span>
+        </a>
+        <a class="pub" href="https://doi.org/10.1038/s41746-025-01788-8">
+          <span class="y"></span>
+          <span>
+            <span class="t">Personalized federated learning for predicting disability progression in multiple sclerosis using real-world routine clinical data<span class="bibnote kind">Journal</span><span class="bibnote sel">Selected</span><span class="bibnote">npj Digital Medicine</span></span>
+            <span class="s"><i>npj Digital Medicine</i> 8(478). Pirmani, De Brouwer, Arany, Oldenhof, Passemiers, Faes, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://doi.org/10.2196/55496">
+          <span class="y"><span class="yearmark">2024</span></span>
+          <span>
+            <span class="t">Accessible ecosystem for clinical research (federated learning for everyone): development and usability study<span class="bibnote kind">Journal</span><span class="bibnote sel">Selected</span><span class="bibnote">Federated Learning</span></span>
+            <span class="s"><i>JMIR Formative Research</i> 8 e55496. Pirmani, Oldenhof, Peeters, De Brouwer, Moreau</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22Federated+Block-Term+Tensor+Regression+for+decentralised+data+analysis+in+healthcare%22">
+          <span class="y"></span>
+          <span>
+            <span class="t">Federated Block-Term Tensor Regression for decentralised data analysis in healthcare<span class="bibnote kind">Preprint</span><span class="bibnote">Federated Learning</span></span>
+            <span class="s"><i>arXiv preprint arXiv:2412.06815</i>. Faes, Pirmani, Moreau, Peeters</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22From+Centralized+to+Federated%3A+The+Journey+of+Data+in+Healthcare%22">
+          <span class="y"></span>
+          <span>
+            <span class="t">From Centralized to Federated: The Journey of Data in Healthcare<span class="bibnote kind">Thesis</span><span class="bibnote">PhD Dissertation</span></span>
+            <span class="s">Pirmani, Moreau, Peeters, Hellings</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22Transforming+Multiple+Sclerosis+Research%3A+Advancing+Disability+Progression+Insights+through+Practical+and+Precise+Federated+Learning+using+Real-World+Data%22">
+          <span class="y"></span>
+          <span>
+            <span class="t">Transforming Multiple Sclerosis Research: Advancing Disability Progression Insights through Practical and Precise Federated Learning using Real-World Data<span class="bibnote kind">Abstract</span><span class="bibnote">Federated Learning</span></span>
+            <span class="s">Pirmani, De Brouwer, Oldenhof, Passemiers, Van Wijmeersch, Butzkueven, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22Unlocking+the+Power+of+Real-World+Data%3A+A+Framework+for+Sustainable+Healthcare%22">
+          <span class="y"></span>
+          <span>
+            <span class="t">Unlocking the Power of Real-World Data: A Framework for Sustainable Healthcare<span class="bibnote kind">Journal</span><span class="bibnote">Real World Data</span></span>
+            <span class="s"><i>Studies in Health Technology and Informatics</i> 316 1582-1583</span>
+          </span>
+        </a>
+        <a class="pub" href="https://doi.org/10.2196/48030">
+          <span class="y"><span class="yearmark">2023</span></span>
+          <span>
+            <span class="t">The Journey of Data Within a Global Data Sharing Initiative: A Federated 3-Layer Data Analysis Pipeline to Scale Up Multiple Sclerosis Research<span class="bibnote kind">Journal</span><span class="bibnote sel">Selected</span><span class="bibnote">Global Data Sharing Initiative</span></span>
+            <span class="s"><i>JMIR Medical Informatics</i> 11(1) e48030. Pirmani, De Brouwer, Geys, Parciak, Moreau, Peeters</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22Augmenting+THerapeutic+Effectiveness+Through+Novel+Analytics+%28ATHENA%29-A+Public+and+Private+Partnership+Project+Funded+by+the+Flemish+Government+%28VLAIO%29%22">
+          <span class="y"><span class="yearmark">2022</span></span>
+          <span>
+            <span class="t">Augmenting THerapeutic Effectiveness Through Novel Analytics (ATHENA)-A Public and Private Partnership Project Funded by the Flemish Government (VLAIO)<span class="bibnote kind">Chapter</span><span class="bibnote">Federated Learning</span></span>
+            <span class="s"><i>Challenges of Trustable AI and Added-Value on Health</i> 829-833. Petsophonsakul, Pirmani, De Brouwer, Akand, Botermans, Van Der Aa, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22Severity+of+COVID19+infection+among+patients+with+multiple+sclerosis+treated+with+interferon-beta%22">
+          <span class="y"></span>
+          <span>
+            <span class="t">Severity of COVID19 infection among patients with multiple sclerosis treated with interferon-beta<span class="bibnote kind">Journal</span><span class="bibnote">Global Data Sharing Initiative</span></span>
+            <span class="s"><i>Multiple Sclerosis and Related Disorders</i> 66 104072. Simpson-Yap, Pirmani, De Brouwer, Peeters, Geys, Parciak, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22Updated+results+of+the+COVID-19+in+MS+global+data+sharing+initiative%3A+anti-CD20+DMTs+deleterious+for+COVID-19+severity+but+interferons+not+protective+among+people+with+MS%22">
+          <span class="y"></span>
+          <span>
+            <span class="t">Updated results of the COVID-19 in MS global data sharing initiative: anti-CD20 DMTs deleterious for COVID-19 severity but interferons not protective among people with MS<span class="bibnote kind">Abstract</span><span class="bibnote">Global Data Sharing Initiative</span></span>
+            <span class="s">Simpson-Yap, Pirmani, Kalincik, De Brouwer, Geys, Parciak, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://doi.org/10.1212/nxi.0000000000200021">
+          <span class="y"></span>
+          <span>
+            <span class="t">Updated results of the COVID-19 in MS global data sharing initiative: anti-CD20 and other risk factors associated with COVID-19 severity<span class="bibnote kind">Journal</span><span class="bibnote sel">Selected</span><span class="bibnote">Global Data Sharing Initiative</span></span>
+            <span class="s"><i>Neurology: Neuroimmunology &amp; Neuroinflammation</i> 9(6) e200021. Simpson-Yap, Pirmani, Kalincik, De Brouwer, Geys, Parciak, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22Associations+of+DMT+therapies+with+COVID-19+severity+in+multiple+sclerosis%22">
+          <span class="y"><span class="yearmark">2021</span></span>
+          <span>
+            <span class="t">Associations of DMT therapies with COVID-19 severity in multiple sclerosis<span class="bibnote kind">Journal</span><span class="bibnote">Global Data Sharing Initiative</span></span>
+            <span class="s"><i>International Journal of Epidemiology</i> 50. Simpson-Yap, Brouwer, Kalincik, Rijke, Hillert, Walton, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://doi.org/10.1212/WNL.0000000000012753">
+          <span class="y"></span>
+          <span>
+            <span class="t">Associations of disease-modifying therapies with COVID-19 severity in multiple sclerosis<span class="bibnote kind">Journal</span><span class="bibnote sel">Selected</span><span class="bibnote">Global Data Sharing Initiative</span></span>
+            <span class="s"><i>Neurology</i> 97(19) e1870-e1885. Simpson-Yap, De Brouwer, Kalincik, Rijke, Hillert, Walton, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22Multiple+Sclerosis+Data+Alliance-A+global+multi-stakeholder+collaboration+to+scale-up+real+world+data+research%22">
+          <span class="y"></span>
+          <span>
+            <span class="t">Multiple Sclerosis Data Alliance-A global multi-stakeholder collaboration to scale-up real world data research<span class="bibnote kind">Journal</span><span class="bibnote">Multiple Sclerosis Data Alliance</span></span>
+            <span class="s"><i>Multiple Sclerosis and Related Disorders</i> 47 102634. Peeters, Parciak, Kalra, Moreau, Kasilingam, Van Galen, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22The+Multiple+Sclerosis+Data+Alliance+Catalogue%3A+enabling+web-based+discovery+of+metadata+from+real-world+multiple+sclerosis+data+sources%22">
+          <span class="y"></span>
+          <span>
+            <span class="t">The Multiple Sclerosis Data Alliance Catalogue: enabling web-based discovery of metadata from real-world multiple sclerosis data sources<span class="bibnote kind">Journal</span><span class="bibnote">Multiple Sclerosis Data Alliance</span></span>
+            <span class="s"><i>International journal of MS care</i> 23(6) 261-268. Geys, Parciak, Pirmani, McBurney, Schmidt, Malbasa, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22Updated+results+of+the+COVID-19+in+MS+global+data+sharing+initiative+validate+consistent+associations+of+anti-CD20+and+other+reported+risk+factors+with+severe+COVID-19+outcomes%22">
+          <span class="y"></span>
+          <span>
+            <span class="t">Updated results of the COVID-19 in MS global data sharing initiative validate consistent associations of anti-CD20 and other reported risk factors with severe COVID-19 outcomes<span class="bibnote kind">Abstract</span><span class="bibnote">Global Data Sharing Initiative</span></span>
+            <span class="s">Simpson-Yap, Helme, Rijke, Kalincik, Hillert, Moreau, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22COVID-19+in+people+with+multiple+sclerosis%3A+a+global+data+sharing+initiative%22">
+          <span class="y"><span class="yearmark">2020</span></span>
+          <span>
+            <span class="t">COVID-19 in people with multiple sclerosis: a global data sharing initiative<span class="bibnote kind">Journal</span><span class="bibnote">Global Data Sharing Initiative</span></span>
+            <span class="s"><i>Multiple Sclerosis Journal</i> 26(10) 1157-1162. Peeters, Parciak, Walton, Geys, Moreau, De Brouwer, et al.</span>
+          </span>
+        </a>
+        <a class="pub" href="https://scholar.google.com/scholar?q=%22First+results+of+the+COVID-19+in+MS+Global+Data+Sharing+Initiative+suggest+anti-CD20+DMTs+are+associated+with+worse+COVID-19+outcomes%22">
+          <span class="y"></span>
+          <span>
+            <span class="t">First results of the COVID-19 in MS Global Data Sharing Initiative suggest anti-CD20 DMTs are associated with worse COVID-19 outcomes<span class="bibnote kind">Journal</span><span class="bibnote">Global Data Sharing Initiative</span></span>
+            <span class="s"><i>Multiple Sclerosis Journal</i> 26(3 SUPPL) 48-49. Simpson-Yap, Kalincik, Rijke, Hillert, Walton, Edan, et al.</span>
+          </span>
+        </a>
+        </div>
+        <p class="after"><a href="https://scholar.google.com/citations?user=RC2DM7kAAAAJ">Citation counts on Google Scholar</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <span>Ashkan Pirmani. KU Leuven and Hasselt University, Belgium.</span>
+      <span>Last updated 2 September 2026. <a href="#" data-u="ashkan_pirmani" data-h="outlook" data-t="com" data-mailto><span data-mail></span></a><noscript><span class="mailplain">ashkan_pirmani [at] outlook.com</span></noscript> </span>
+    </div>
+  </footer>
+</main>
+
+<script src="assets/app.js?v=441ae623"></script>
+</body>
+</html>

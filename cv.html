@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV. Ashkan Pirmani</title>
+<meta name="description" content="Ashkan Pirmani: real world evidence from health data that cannot be gathered in one place. Experience, systems built, awards, teaching and a dual PhD.">
+<link rel="canonical" href="https://ashkan-pirmani.github.io/cv.html">
+<meta name="author" content="Ashkan Pirmani">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CV. Ashkan Pirmani">
+<meta property="og:description" content="Ashkan Pirmani: real world evidence from health data that cannot be gathered in one place. Experience, systems built, awards, teaching and a dual PhD.">
+<meta property="og:url" content="https://ashkan-pirmani.github.io/cv.html">
+<meta property="og:image" content="https://ashkan-pirmani.github.io/assets/img/og-cv.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Title card for CV. Ashkan Pirmani, on ashkan-pirmani.github.io">
+<meta property="og:site_name" content="Ashkan Pirmani">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CV. Ashkan Pirmani">
+<meta name="twitter:description" content="Ashkan Pirmani: real world evidence from health data that cannot be gathered in one place. Experience, systems built, awards, teaching and a dual PhD.">
+<meta name="twitter:image" content="https://ashkan-pirmani.github.io/assets/img/og-cv.jpg">
+<meta name="twitter:image:alt" content="Title card for CV. Ashkan Pirmani, on ashkan-pirmani.github.io">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111111'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial,sans-serif' font-size='20' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/img/icon.png">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+<style>
+/* THE CURTAIN.
+   Inlined in the head so it paints on the first frame with no flash of the page
+   behind it. It takes itself down with a CSS animation, so JavaScript being off
+   never traps anyone. JavaScript only picks the line and skips the whole thing
+   after the first page of a visit.
+
+   The red rule is the point of it. It draws out under the name, holds while you
+   read, then runs the full width of the screen and lands at the top of the page
+   as the stripe that is there on every page anyway. The curtain does not just
+   disappear; it turns into the site. */
+#curtain{
+  position:fixed;inset:0;z-index:999;overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:var(--paper,#fff);
+  animation:c-out .6s cubic-bezier(.65,0,.35,1) 2.2s forwards;
+}
+#curtain .cw{
+  font-weight:800;letter-spacing:-.035em;line-height:1;
+  font-size:clamp(2.1rem,7.4vw,4rem);color:var(--ink,#0A0A0A);
+  opacity:0;animation:c-rise .66s cubic-bezier(.16,1,.3,1) .07s forwards;
+}
+/* The divider, and the whole idea of the curtain. A grey track with a red fill
+   that draws left to right, holds while you read, then runs the full width of
+   the screen and travels up to sit where the red stripe sits on every page.
+   The curtain does not disappear. It turns into the site. */
+#curtain .cr{
+  position:relative;overflow:hidden;
+  width:min(78vw,560px);height:3px;margin:28px 0 26px;
+  background:var(--hair,#D6D6D6);opacity:0;
+  animation:c-fade .44s ease .18s forwards,
+            c-sweep .66s cubic-bezier(.7,0,.3,1) 1.93s forwards;
+}
+#curtain .cr i{
+  position:absolute;inset:0 auto 0 0;width:0;background:var(--red,#CE2F19);
+  animation:c-draw .66s cubic-bezier(.16,1,.3,1) .24s forwards;
+}
+#curtain .cq{
+  max-width:34ch;text-align:center;text-wrap:balance;
+  font-size:clamp(.95rem,2.7vw,1.12rem);line-height:1.62;color:var(--ink-2,#3A3A3A);
+  opacity:0;animation:c-rise .66s cubic-bezier(.16,1,.3,1) .51s forwards;
+}
+#curtain .ca{
+  margin-top:18px;max-width:min(90vw,40ch);text-align:center;text-wrap:balance;
+  font-size:clamp(.58rem,1.9vw,.68rem);letter-spacing:.14em;text-transform:uppercase;
+  line-height:1.7;color:var(--mute,#8A8A86);
+  opacity:0;animation:c-fade .55s ease .92s forwards;
+}
+@keyframes c-rise{from{opacity:0;transform:translateY(14px);filter:blur(10px);}
+                  to{opacity:1;transform:none;filter:blur(0);}}
+@keyframes c-fade{to{opacity:1;}}
+@keyframes c-draw{to{width:100%;}}
+@keyframes c-sweep{
+  to{width:100%;background:var(--red,#CE2F19);
+     transform:translateY(calc(-50vh + 27px));}
+}
+@keyframes c-out{to{opacity:0;visibility:hidden;}}
+
+/* the page resolves out of a blur behind it */
+body>main,body>nav,body>footer{animation:c-page .72s cubic-bezier(.16,1,.3,1) 2.09s backwards;}
+@keyframes c-page{from{opacity:0;filter:blur(11px);}to{opacity:1;filter:blur(0);}}
+
+html.seen #curtain{display:none;}
+html.seen body>main,html.seen body>nav,html.seen body>footer{animation:none;}
+@media (prefers-reduced-motion:reduce){
+  #curtain{animation:c-out .2s linear .05s forwards;}
+  #curtain .cw,#curtain .cq,#curtain .ca{animation:none;opacity:1;}
+  #curtain .cr{animation:none;opacity:1;}
+  #curtain .cr i{animation:none;width:100%;}
+  body>main,body>nav,body>footer{animation:none;}
+}
+</style>
+<script>
+(function(){
+  /* Once per visit. A curtain on every click is a toll, not a welcome. */
+  try{ if(sessionStorage.getItem('seen')){document.documentElement.className+=' seen';return;}
+       sessionStorage.setItem('seen','1'); }catch(e){}
+  /* Each line stands on its own. A visitor sees exactly one of these, cold,
+     before they have read a word of the site. */
+  var L=[
+    "The hard part is not the model.",
+    "What moves, and what stays?",
+    "The data stays. The method moves.",
+    "Privacy is part of the design.",
+    "If it needs me to run, it is not finished.",
+    "If every site needs an engineer, it will not scale.",
+    "Rare disease has no data to waste.",
+    "More sites can matter more than a better model.",
+    "Different systems. Same question.",
+    "Thirty countries. Thirty systems. One question.",
+    "Scaling code is easier than scaling agreement.",
+    "A paper is not the end of the work.",
+    "Real world data is messy. That is the real world.",
+    "Not every problem needs a better model.",
+    "Sometimes access is the real bottleneck.",
+    "One definition can be harder than one model.",
+    "Patient data does not need to travel to take part.",
+    "Every site you leave out changes the answer."
+  ];
+  document.addEventListener('DOMContentLoaded',function(){
+    var q=document.getElementById('cq');
+    if(q) q.textContent=L[Math.floor(Math.random()*L.length)];
+    var c=document.getElementById('curtain');
+    if(!c) return;
+    /* Anyone who does not want to wait should not have to. Any click, key,
+       scroll or touch takes it down at once. */
+    var gone=false;
+    function drop(){
+      if(gone) return; gone=true;
+      c.style.transition='opacity .28s ease';
+      c.style.opacity='0';
+      setTimeout(function(){if(c.parentNode)c.remove();},300);
+    }
+    ['click','keydown','wheel','touchstart'].forEach(function(ev){
+      document.addEventListener(ev,drop,{once:true,passive:true});
+    });
+    /* Belt and braces: if an animation never fires, take it down anyway. */
+    setTimeout(drop,3500);
+  });
+})();
+</script>
+
+<link rel="stylesheet" href="assets/style.css?v=d12f81a2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ashkan Pirmani","url":"https://ashkan-pirmani.github.io/","image":"https://ashkan-pirmani.github.io/assets/img/portrait.jpg","jobTitle":"Applied Machine Learning Scientist","description":"Applied machine learning scientist working on real world evidence in health. Gets answers out of patient records that cannot be gathered in one place, using federated methods, the systems around them, and the governance that lets registries learn together.","affiliation":[{"@type":"CollegeOrUniversity","name":"KU Leuven","url":"https://www.kuleuven.be/"},{"@type":"CollegeOrUniversity","name":"Hasselt University","url":"https://www.uhasselt.be/"}],"knowsAbout":["Real World Evidence","Applied Machine Learning","Federated Learning","OMOP Common Data Model","OHDSI","Observational Research","Evidence Generation","Cohort Definition","Phenotyping","Data Quality","Data Feasibility","Registry Harmonization","Personalized Federated Learning","Real World Data","Observational Data","Privacy-Preserving Machine Learning","Health Data Science","Multiple Sclerosis Research","FAIR Data","PyTorch","Flower","Survival Analysis","Python","Distributed Machine Learning"],"sameAs":["https://scholar.google.com/citations?user=RC2DM7kAAAAJ","https://github.com/ashkan-pirmani","https://www.linkedin.com/in/ashkan-p-3b8a8896/","https://www.researchgate.net/profile/Ashkan-Pirmani"]}</script>
+</head>
+<body>
+<div id="curtain" aria-hidden="true">
+  <span class="cw">Ashkan Pirmani</span>
+  <span class="cr"><i></i></span>
+  <span class="cq" id="cq">The data stays. The method moves.</span>
+  <span class="ca">Applied machine learning · Real world evidence · Health data</span>
+</div>
+<a class="skip" href="#top">Skip to the content</a>
+<nav class="topbar show" id="topbar" aria-label="Sections">
+  <div class="container topbar-in">
+    <span class="tb-name"><a href="index.html">Ashkan Pirmani</a></span>
+    <span class="tb-links">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="field.html">Background</a>
+      <a href="talks.html">Talks</a>
+      <a href="#top" aria-current="page">CV</a>
+      <a href="index.html#contact">Contact</a>
+    </span>
+  </div>
+</nav>
+
+<main id="top" tabindex="-1">
+
+  <header class="page-head">
+    <div class="container">
+      <a class="back" href="index.html">Back to home</a>
+      <h1>Curriculum Vitae</h1>
+      <p>Ashkan Pirmani. I make evidence out of health data that cannot be gathered in one
+        place. I also build the systems that let other groups do the same. Six years across
+        registries, ordinary care records and consortia in more than thirty countries. From
+        September 2026 I do this inside a company. The roles closest to it sit between applied machine learning, real world
+        evidence, and the engineering underneath both.</p>
+      <a class="cvpdf" href="assets/ashkan-pirmani-cv.pdf" download><span class="v">Download CV (PDF)</span><span class="w">02 September 2026, 294 KB</span></a>
+      <p class="cvlinks">
+        <a href="#" data-u="ashkan_pirmani" data-h="outlook" data-t="com" data-mailto><span data-mail></span></a><noscript><span class="mailplain">ashkan_pirmani [at] outlook.com</span></noscript>
+        <a href="https://www.linkedin.com/in/ashkan-p-3b8a8896/">LinkedIn</a>
+        <a href="https://github.com/ashkan-pirmani">GitHub</a>
+        <a href="publications.html"><b>Publications</b></a>
+        <a href="https://scholar.google.com/citations?user=RC2DM7kAAAAJ">Scholar</a>
+      </p>
+    </div>
+  </header>
+
+  <section class="band sec">
+    <div class="container grid">
+      <div class="col-label"><p class="lab"><span class="num">01</span><span class="rule"></span><span class="txt">Impact</span></p></div>
+      <div class="col-main">
+        <h2 class="head">The four results worth knowing</h2>
+        <p class="lede">Each one links to the paper it came from, and says what kind of result it
+          is. Nothing here is a projection unless it says so.</p>
+        <div class="impact">
+          <div>
+            <p class="ih">7.2% and 31% better</p>
+            <p class="ib">Fitting a federated model to each country beat the same method without
+              that fitting, at ranking who will get worse and at catching them. It also beat
+              training on everything pooled together, by 3.8%. Measured in simulation on records
+              from 26,246 patients, 283,115 clinical episodes, contributed by 146 centers.
+              I conceived the study, ran the experiments, analyzed the data and led the writing.
+              First author, in a collaboration of 73. Funded by the Flanders AI Research
+              Program.</p>
+            <p class="im"><a href="https://doi.org/10.1038/s41746-025-01788-8">npj Digital Medicine 8(478), 2025</a></p>
+          </div>
+          <div>
+            <p class="ih">45.5% more records to work with</p>
+            <p class="ib">Designed and built the federated route into a study that already had two
+              other ways in. Five registries joined through it that could not have joined
+              otherwise. The four counted in the paper added 3,527 records to the 7,757 already
+              collected. Deployed and run by the
+              registries themselves. This is a data feasibility result first. The question could
+              not have been answered on the records that were already reachable. The collection was
+              run by the MS International Federation and the MS Data Alliance.
+              <a href="https://www.msif.org/news/2022/04/06/an-update-from-the-ms-global-data-sharing-initiative-thank-you/">Its
+              findings went into the global covid advice</a> for people with multiple sclerosis.
+              First author on the architecture paper.</p>
+            <p class="im"><a href="https://doi.org/10.2196/48030">JMIR Medical Informatics 11(1):e48030, 2023</a></p>
+          </div>
+          <div>
+            <p class="ih">Half the sites, almost all the score</p>
+            <p class="ib">On a public benchmark, letting half the centers stay centralized instead
+              of forcing all four to federate kept 97.5% of the fully federated score. That is the
+              degree of federation, and it is the idea I am known for. A working prototype,
+              evaluated on Azure by us.</p>
+            <p class="im"><a href="https://doi.org/10.2196/55496">JMIR Formative Research 8:e55496, 2024</a></p>
+          </div>
+          <div>
+            <p class="ih">A public resource, open and maintained</p>
+            <p class="ib">FLkit is live: 39 pages, eight sections, 11 ways in depending on your
+              role, seven worked project stories, 29 contributors. Supported by ELIXIR Belgium. These are
+              numbers about what is in it, not a measurement of how many teams use it. That
+              evaluation has not been done yet.</p>
+            <p class="im"><a href="https://arxiv.org/abs/2606.23500">Pirmani, Vermeulen et al., 2026</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band sec">
+    <div class="container grid">
+      <div class="col-label"><p class="lab"><span class="num">02</span><span class="rule"></span><span class="txt">Experience</span></p></div>
+      <div class="col-main">
+        <h2 class="head">What I have done</h2>
+        <div class="cvblock">
+          <div class="cvrow">
+            <span class="when">From Sep 2026</span>
+            <div>
+              <p class="what">Innovation Mandate, with Johnson &amp; Johnson Innovative Medicine</p>
+              <p class="where">An Innovation Mandate from Flanders Innovation and
+                Entrepreneurship, the Flemish government's innovation agency. The grant goes to a
+                consortium of one company, one university and one researcher. Two years. The first
+                develops the method at the university. The second applies it with the company,
+                which co-funds it and sets the direction, and includes working inside it. Treatment
+                comparison from routine records, where no trial exists.</p>
+              <ul>
+                <li>Starts September 2026. Nothing here has happened yet.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when">2024 to now</span>
+            <div>
+              <p class="what">Postdoctoral Researcher</p>
+              <p class="where">KU Leuven and Hasselt University, Belgium.</p>
+              <ul>
+                <li>Lead FLkit. It went from an internal need to a public resource other groups
+                  can use without asking me.</li>
+                <li>Designed and built FLoRank, the method behind the ECTRIMS grant. Taking it
+                  from a prototype to its first run on a real data network.</li>
+                <li>Single point of contact across more than thirty countries, between the people
+                  who hold the data, the people who treat the patients, and the people who decide
+                  what is allowed.</li>
+                <li>Supervise master&#39;s students and teach the data science course.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when">2020 to 2024</span>
+            <div>
+              <p class="what">Doctoral Researcher</p>
+              <p class="where">KU Leuven and Hasselt University, Belgium.</p>
+              <ul>
+                <li>Built the federated route into the worldwide multiple sclerosis and covid
+                  data sharing effort, so registries that could not send data could still take
+                  part. It became the largest group of its kind.</li>
+                <li>Author of FL4E, and of the degree of federation.</li>
+                <li>Ran the first systematic comparison of personalized federated learning for
+                  two year disability progression. Published in npj Digital Medicine, 2025.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when">2017 to 2019</span>
+            <div>
+              <p class="what">Research Assistant, Decision Support Systems Lab</p>
+              <p class="where">IranDoc, Iranian Research Institute for Information Science and
+                Technology, Tehran.</p>
+              <ul>
+                <li>Agent based and system dynamics simulation of the national parcel network,
+                  searched with a genetic algorithm for a better set of hubs. Best scenario:
+                  15% lower projected transport cost. Never built, so never realized.</li>
+                <li>Delivered as a decision support dashboard and a policy analysis to top level
+                  executives.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band sec">
+    <div class="container grid">
+      <div class="col-label"><p class="lab"><span class="num">03</span><span class="rule"></span><span class="txt">Systems</span></p></div>
+      <div class="col-main">
+        <h2 class="head">Selected systems</h2>
+        <p class="lede">What each one achieved is in section 01. This is what state it is in and
+          where to find it. Not all of it is a repository.</p>
+        <div class="cvblock">
+          <div class="cvrow">
+            <span class="when">2024 to now</span>
+            <div>
+              <p class="what"><a href="https://uhasselt-biomedicaldatasciences.github.io/federated-learning-toolkit/">FLkit</a></p>
+              <p class="where">Lead developer. Public and maintained.</p>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when">2023 to now</span>
+            <div>
+              <p class="what"><a href="https://github.com/ashkan-pirmani/FL4E">FL4E</a> and
+                <a href="https://github.com/ashkan-pirmani/FL4E-Analysis">FL4E-Analysis</a></p>
+              <p class="where">Author. Reference implementation and the benchmarks behind the paper.</p>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when">2024 to now</span>
+            <div>
+              <p class="what"><a href="https://github.com/ashkan-pirmani/FL-MS-RWD">FL-MS-RWD</a></p>
+              <p class="where">Author. The study code for the npj paper.</p>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when">2021 to 2023</span>
+            <div>
+              <p class="what">Global Data Sharing Initiative, federated route</p>
+              <p class="where">Architect. Not a repository. Infrastructure that ran inside five
+                registries that were not allowed to send data, so they could take part anyway.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band sec">
+    <div class="container grid">
+      <div class="col-label"><p class="lab"><span class="num">04</span><span class="rule"></span><span class="txt">Education</span></p></div>
+      <div class="col-main">
+        <h2 class="head">Where I trained</h2>
+        <div class="cvblock">
+          <div class="cvrow">
+            <span class="when">2020 to 2024</span>
+            <div>
+              <p class="what">Dual PhD</p>
+              <p class="where">Electrical engineering, KU Leuven. Biomedical sciences, Hasselt
+                University. Belgium. Defended November 2024.</p>
+              <ul>
+                <li>Thesis: From Centralized to Federated. The Journey of Data in Healthcare.</li>
+                <li>Supervisors: Yves Moreau (KU Leuven), Liesbet M. Peeters (Hasselt University),
+                  Niels Hellings (co-supervisor).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when">2016 to 2019</span>
+            <div>
+              <p class="what">MSc, Industrial Engineering</p>
+              <p class="where">Socio-economic systems. Kharazmi University, Tehran.</p>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when">2015 to 2017</span>
+            <div>
+              <p class="what">MBA, Quality Engineering</p>
+              <p class="where">Tose&#39;e Institute, Tehran.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band sec">
+    <div class="container grid">
+      <div class="col-label"><p class="lab"><span class="num">05</span><span class="rule"></span><span class="txt">Awards</span></p></div>
+      <div class="col-main">
+        <h2 class="head">Recognition</h2>
+        <div class="cvblock">
+          <div class="cvrow">
+            <span class="when yearmark">2026</span>
+            <div>
+              <p class="what">Innovation Mandate, Flanders Innovation and Entrepreneurship</p>
+              <p class="where">Awarded to one researcher, with a company and a university behind
+                them. The second year is not automatic; it depends on passing a review of the
+                first. The work it funds is under Experience.</p>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when yearmark">2025</span>
+            <div>
+              <p class="what">ECTRIMS personal grant for scientific quality</p>
+              <p class="where">Awarded for FLoRank, presented at ECTRIMS 2025, Barcelona.</p>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when yearmark">2019</span>
+            <div>
+              <p class="what">Fully funded PhD scholarship</p>
+              <p class="where">Both doctorates were funded in full, KU Leuven and Hasselt
+                University, through to the defense in 2024.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band sec">
+    <div class="container grid">
+      <div class="col-label"><p class="lab"><span class="num">06</span><span class="rule"></span><span class="txt">Teaching</span></p></div>
+      <div class="col-main">
+        <h2 class="head">Teaching and supervision</h2>
+        <div class="cvblock">
+          <div class="cvrow">
+            <span class="when">2022 to 2024</span>
+            <div>
+              <p class="what">Data Science in Healthcare</p>
+              <p class="where">Teaching member, Healthcare Engineering program,
+                Hasselt University. Academic years 2022 to 2023 and 2023 to 2024.</p>
+            </div>
+          </div>
+          <div class="cvrow">
+            <span class="when">2021 to now</span>
+            <div>
+              <p class="what">Master's thesis supervision</p>
+              <p class="where">Seven Master's theses in Artificial Intelligence, KU Leuven.</p>
+              <ul>
+                <li>Predicting admission to care. Federated, pooled and local data compared.</li>
+                <li>How splitting the data changes what the model learns.</li>
+                <li>Federated boosting in semi-supervised learning.</li>
+                <li>Contrastive learning for federated models.</li>
+                <li>Personalized models. Architectures and parameter exchange.</li>
+                <li>Fine-tuning a global federated model for local performance.</li>
+                <li>Early disease detection from shallow whole genome sequencing of cell-free DNA.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band sec">
+    <div class="container grid">
+      <div class="col-label"><p class="lab"><span class="num">07</span><span class="rule"></span><span class="txt">Areas</span></p></div>
+      <div class="col-main">
+        <h2 class="head">Areas I work in</h2>
+        <p class="lede">Every paper, abstract and chapter is on the
+          <a href="publications.html">publications page</a>. Talks and news are on
+          <a href="talks.html">their own page</a>.</p>
+        <div class="tracks">
+          <div class="track">
+            <h3>Methods</h3>
+            <ul>
+              <li>Federated learning and federated analysis</li>
+              <li>Personalization under non-identical data across sites</li>
+              <li>Privacy-preserving machine learning</li>
+              <li>Survival analysis and classification on clinical data</li>
+            </ul>
+          </div>
+          <div class="track">
+            <h3>Data</h3>
+            <ul>
+              <li>Real world and observational data</li>
+              <li>Cohort building and phenotype definition across registries</li>
+              <li>Registry harmonization across countries, and data quality</li>
+              <li>Data feasibility: whether a question can be answered at all</li>
+              <li>OMOP common data model, through OHDSI</li>
+              <li>FAIR data practice and standardization</li>
+              <li>Low prevalence and rare disease research</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <span>Ashkan Pirmani. KU Leuven and Hasselt University, Belgium.</span>
+      <span>Last updated 2 September 2026. <a href="#" data-u="ashkan_pirmani" data-h="outlook" data-t="com" data-mailto><span data-mail></span></a><noscript><span class="mailplain">ashkan_pirmani [at] outlook.com</span></noscript> </span>
+    </div>
+  </footer>
+
+</main>
+
+<script src="assets/app.js?v=441ae623"></script>
+</body>
+</html>

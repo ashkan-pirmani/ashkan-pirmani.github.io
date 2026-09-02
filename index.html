@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ashkan Pirmani. Evidence from Health Data That Cannot Move</title>
+<meta name="description" content="I make evidence out of health records that cannot be gathered in one place. Real world evidence across more than thirty countries, with the records never moving.">
+<link rel="canonical" href="https://ashkan-pirmani.github.io/">
+<meta name="author" content="Ashkan Pirmani">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ashkan Pirmani. Evidence from Health Data That Cannot Move">
+<meta property="og:description" content="I make evidence out of health records that cannot be gathered in one place. Real world evidence across more than thirty countries, with the records never moving.">
+<meta property="og:url" content="https://ashkan-pirmani.github.io/">
+<meta property="og:image" content="https://ashkan-pirmani.github.io/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chart: a federated model fitted to each country scored 0.8398, above the same model trained on all records pooled together at 0.8092. Measured on records from 26,246 patients.">
+<meta property="og:site_name" content="Ashkan Pirmani">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ashkan Pirmani. Evidence from Health Data That Cannot Move">
+<meta name="twitter:description" content="I make evidence out of health records that cannot be gathered in one place. Real world evidence across more than thirty countries, with the records never moving.">
+<meta name="twitter:image" content="https://ashkan-pirmani.github.io/assets/img/og.jpg">
+<meta name="twitter:image:alt" content="Chart: a federated model fitted to each country scored 0.8398, above the same model trained on all records pooled together at 0.8092. Measured on records from 26,246 patients.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111111'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial,sans-serif' font-size='20' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/img/icon.png">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+<style>
+/* THE CURTAIN.
+   Inlined in the head so it paints on the first frame with no flash of the page
+   behind it. It takes itself down with a CSS animation, so JavaScript being off
+   never traps anyone. JavaScript only picks the line and skips the whole thing
+   after the first page of a visit.
+
+   The red rule is the point of it. It draws out under the name, holds while you
+   read, then runs the full width of the screen and lands at the top of the page
+   as the stripe that is there on every page anyway. The curtain does not just
+   disappear; it turns into the site. */
+#curtain{
+  position:fixed;inset:0;z-index:999;overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:var(--paper,#fff);
+  animation:c-out .6s cubic-bezier(.65,0,.35,1) 2.2s forwards;
+}
+#curtain .cw{
+  font-weight:800;letter-spacing:-.035em;line-height:1;
+  font-size:clamp(2.1rem,7.4vw,4rem);color:var(--ink,#0A0A0A);
+  opacity:0;animation:c-rise .66s cubic-bezier(.16,1,.3,1) .07s forwards;
+}
+/* The divider, and the whole idea of the curtain. A grey track with a red fill
+   that draws left to right, holds while you read, then runs the full width of
+   the screen and travels up to sit where the red stripe sits on every page.
+   The curtain does not disappear. It turns into the site. */
+#curtain .cr{
+  position:relative;overflow:hidden;
+  width:min(78vw,560px);height:3px;margin:28px 0 26px;
+  background:var(--hair,#D6D6D6);opacity:0;
+  animation:c-fade .44s ease .18s forwards,
+            c-sweep .66s cubic-bezier(.7,0,.3,1) 1.93s forwards;
+}
+#curtain .cr i{
+  position:absolute;inset:0 auto 0 0;width:0;background:var(--red,#CE2F19);
+  animation:c-draw .66s cubic-bezier(.16,1,.3,1) .24s forwards;
+}
+#curtain .cq{
+  max-width:34ch;text-align:center;text-wrap:balance;
+  font-size:clamp(.95rem,2.7vw,1.12rem);line-height:1.62;color:var(--ink-2,#3A3A3A);
+  opacity:0;animation:c-rise .66s cubic-bezier(.16,1,.3,1) .51s forwards;
+}
+#curtain .ca{
+  margin-top:18px;max-width:min(90vw,40ch);text-align:center;text-wrap:balance;
+  font-size:clamp(.58rem,1.9vw,.68rem);letter-spacing:.14em;text-transform:uppercase;
+  line-height:1.7;color:var(--mute,#8A8A86);
+  opacity:0;animation:c-fade .55s ease .92s forwards;
+}
+@keyframes c-rise{from{opacity:0;transform:translateY(14px);filter:blur(10px);}
+                  to{opacity:1;transform:none;filter:blur(0);}}
+@keyframes c-fade{to{opacity:1;}}
+@keyframes c-draw{to{width:100%;}}
+@keyframes c-sweep{
+  to{width:100%;background:var(--red,#CE2F19);
+     transform:translateY(calc(-50vh + 27px));}
+}
+@keyframes c-out{to{opacity:0;visibility:hidden;}}
+
+/* the page resolves out of a blur behind it */
+body>main,body>nav,body>footer{animation:c-page .72s cubic-bezier(.16,1,.3,1) 2.09s backwards;}
+@keyframes c-page{from{opacity:0;filter:blur(11px);}to{opacity:1;filter:blur(0);}}
+
+html.seen #curtain{display:none;}
+html.seen body>main,html.seen body>nav,html.seen body>footer{animation:none;}
+@media (prefers-reduced-motion:reduce){
+  #curtain{animation:c-out .2s linear .05s forwards;}
+  #curtain .cw,#curtain .cq,#curtain .ca{animation:none;opacity:1;}
+  #curtain .cr{animation:none;opacity:1;}
+  #curtain .cr i{animation:none;width:100%;}
+  body>main,body>nav,body>footer{animation:none;}
+}
+</style>
+<script>
+(function(){
+  /* Once per visit. A curtain on every click is a toll, not a welcome. */
+  try{ if(sessionStorage.getItem('seen')){document.documentElement.className+=' seen';return;}
+       sessionStorage.setItem('seen','1'); }catch(e){}
+  /* Each line stands on its own. A visitor sees exactly one of these, cold,
+     before they have read a word of the site. */
+  var L=[
+    "The hard part is not the model.",
+    "What moves, and what stays?",
+    "The data stays. The method moves.",
+    "Privacy is part of the design.",
+    "If it needs me to run, it is not finished.",
+    "If every site needs an engineer, it will not scale.",
+    "Rare disease has no data to waste.",
+    "More sites can matter more than a better model.",
+    "Different systems. Same question.",
+    "Thirty countries. Thirty systems. One question.",
+    "Scaling code is easier than scaling agreement.",
+    "A paper is not the end of the work.",
+    "Real world data is messy. That is the real world.",
+    "Not every problem needs a better model.",
+    "Sometimes access is the real bottleneck.",
+    "One definition can be harder than one model.",
+    "Patient data does not need to travel to take part.",
+    "Every site you leave out changes the answer."
+  ];
+  document.addEventListener('DOMContentLoaded',function(){
+    var q=document.getElementById('cq');
+    if(q) q.textContent=L[Math.floor(Math.random()*L.length)];
+    var c=document.getElementById('curtain');
+    if(!c) return;
+    /* Anyone who does not want to wait should not have to. Any click, key,
+       scroll or touch takes it down at once. */
+    var gone=false;
+    function drop(){
+      if(gone) return; gone=true;
+      c.style.transition='opacity .28s ease';
+      c.style.opacity='0';
+      setTimeout(function(){if(c.parentNode)c.remove();},300);
+    }
+    ['click','keydown','wheel','touchstart'].forEach(function(ev){
+      document.addEventListener(ev,drop,{once:true,passive:true});
+    });
+    /* Belt and braces: if an animation never fires, take it down anyway. */
+    setTimeout(drop,3500);
+  });
+})();
+</script>
+
+<link rel="stylesheet" href="assets/style.css?v=d12f81a2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ashkan Pirmani","url":"https://ashkan-pirmani.github.io/","image":"https://ashkan-pirmani.github.io/assets/img/portrait.jpg","jobTitle":"Applied Machine Learning Scientist","description":"Applied machine learning scientist working on real world evidence in health. Gets answers out of patient records that cannot be gathered in one place, using federated methods, the systems around them, and the governance that lets registries learn together.","affiliation":[{"@type":"CollegeOrUniversity","name":"KU Leuven","url":"https://www.kuleuven.be/"},{"@type":"CollegeOrUniversity","name":"Hasselt University","url":"https://www.uhasselt.be/"}],"knowsAbout":["Real World Evidence","Applied Machine Learning","Federated Learning","OMOP Common Data Model","OHDSI","Observational Research","Evidence Generation","Cohort Definition","Phenotyping","Data Quality","Data Feasibility","Registry Harmonization","Personalized Federated Learning","Real World Data","Observational Data","Privacy-Preserving Machine Learning","Health Data Science","Multiple Sclerosis Research","FAIR Data","PyTorch","Flower","Survival Analysis","Python","Distributed Machine Learning"],"sameAs":["https://scholar.google.com/citations?user=RC2DM7kAAAAJ","https://github.com/ashkan-pirmani","https://www.linkedin.com/in/ashkan-p-3b8a8896/","https://www.researchgate.net/profile/Ashkan-Pirmani"]}</script>
+</head>
+<body>
+<div id="curtain" aria-hidden="true">
+  <span class="cw">Ashkan Pirmani</span>
+  <span class="cr"><i></i></span>
+  <span class="cq" id="cq">The data stays. The method moves.</span>
+  <span class="ca">Applied machine learning · Real world evidence · Health data</span>
+</div>
+<a class="skip" href="#top">Skip to the content</a>
+<nav class="topbar show" id="topbar" aria-label="Sections">
+  <div class="container topbar-in">
+    <span class="tb-name"><a href="#top">Ashkan Pirmani</a></span>
+    <span class="tb-links">
+      <a href="#top" aria-current="page">Home</a>
+      <a href="work.html">Work</a>
+      <a href="field.html">Background</a>
+      <a href="talks.html">Talks</a>
+      <a href="cv.html">CV</a>
+      <a href="#contact">Contact</a>
+    </span>
+  </div>
+</nav>
+
+<main id="top" tabindex="-1">
+
+  <!-- ================= THE HOOK ================= -->
+  <header class="masthead">
+    <div class="container grid">
+      <div class="mast-name">
+        <p class="hook-head">
+          <span>Applied machine learning scientist &middot; Real world evidence &middot; Health data systems</span>
+        </p>
+
+        <h1 class="hook">
+          I answer medical questions with data I am
+          <span class="r">never allowed to see.</span>
+        </h1>
+
+        <p class="hook-sub">
+          I make evidence out of health records that cannot be moved.
+        </p>
+
+        <p class="hook-where">From September 2026 I do this inside
+          <span class="r">Johnson &amp; Johnson</span> Innovative Medicine. The roles closest to it
+          sit between applied machine learning, real world evidence, and the engineering
+          underneath both.</p>
+
+        <ul class="paths">
+          <li><a href="#d-pfl"><span class="pk">See what it produced</span>
+            <span class="px">The result, the numbers, and the paper they came from</span></a></li>
+          <li><a href="work.html"><span class="pk">Press the things I built</span>
+            <span class="px">Four working figures, with the controls left on</span></a></li>
+          <li><a href="field.html"><span class="pk">Start from the beginning</span>
+            <span class="px">What this field is, in plain words, if none of it is yours</span></a></li>
+        </ul>
+
+      </div>
+
+      <div class="mast-side">
+        <picture>
+          <source srcset="assets/img/portrait.webp" type="image/webp">
+          <img class="portrait" src="assets/img/portrait.jpg"
+               alt="Ashkan Pirmani, who makes evidence out of health records that cannot be gathered in one place, at KU Leuven and Hasselt University"
+               width="230" height="288" fetchpriority="high" decoding="async">
+        </picture>
+        <ul class="meta">
+          <li><a href="https://www.linkedin.com/in/ashkan-p-3b8a8896/">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="3"/><circle cx="5.6" cy="5.6" r="1.5" class="k"/><rect x="4.4" y="8.4" width="2.4" height="7.2" class="k"/><path d="M9.4 8.4h2.3v1a2.9 2.9 0 0 1 4.9 2.1v4.1h-2.4v-3.7c0-1-.6-1.6-1.4-1.6s-1.5.6-1.5 1.7v3.6H9.4z" class="k"/></svg>
+            LinkedIn</a></li>
+          <li><a href="https://github.com/ashkan-pirmani">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="5.2" cy="4.6" r="2.2"/><circle cx="5.2" cy="15.4" r="2.2"/><circle cx="14.8" cy="4.6" r="2.2"/><path d="M5.2 6.8v6.4"/><path d="M14.8 6.8v2.4a3.2 3.2 0 0 1-3.2 3.2H8.4a3.2 3.2 0 0 0-3.2 3.2"/></svg>
+            GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=RC2DM7kAAAAJ">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.6 18.4 7 10 11.4 1.6 7z"/><path d="M4.8 8.9v4.3c0 1.7 2.3 3.1 5.2 3.1s5.2-1.4 5.2-3.1V8.9"/></svg>
+            Google Scholar</a></li>
+        </ul>
+      </div>
+
+
+
+
+    </div>
+
+      <!-- ================= THE STRIP =================
+           The bottom edge of the first screen. It used to be a full diagram with
+           eight headings and eight explanations, sitting where a reader's first
+           glance lands, and the honest answer to "what do I take from this" was
+           nothing. So the sentence now carries the point and the rail only proves
+           it. The explanations moved to How I work, where somebody has asked. -->
+    <div class="container strip-wrap">
+        <div class="strip">
+          <p class="strip-h">Eight steps turn a medical question into evidence.
+            <b>I lead 4 of them</b>, share 3, and the last one is never mine.</p>
+          <ol class="spine mini">
+              <li class="co"><span class="sp-k">The question</span></li>
+              <li class="co"><span class="sp-k">The same patient</span></li>
+              <li class="led"><span class="sp-k">A permitted route</span></li>
+              <li class="led"><span class="sp-k">Running at each site</span></li>
+              <li class="co"><span class="sp-k">The data problems</span></li>
+              <li class="led"><span class="sp-k">The model</span></li>
+              <li class="led"><span class="sp-k">The evidence</span></li>
+              <li class="out"><span class="sp-k">The clinical decision</span></li>
+          </ol>
+          <p class="strip-k">
+            <span class="ck led"><i class="ck-l"></i>I led it</span>
+            <span class="ck co"><i class="ck-l"></i>Co-owned</span>
+            <span class="ck out"><i class="ck-l"></i>Outside my decision</span>
+          </p>
+        </div>
+    </div>
+  </header>
+
+  <section class="band credsband">
+    <div class="container">
+      <ul class="creds">
+        <li>
+          <span class="ck">Doctorates</span>
+          <span class="cv"><b>Dual PhD</b>, electrical engineering at <b>KU Leuven</b> and
+            biomedical sciences at <b>Hasselt University</b>. Both defended in 2024</span>
+          <span class="cy">2024</span>
+        </li>
+        <li>
+          <span class="ck">Next</span>
+          <span class="cv"><b>Johnson &amp; Johnson</b> Innovative Medicine, from 2026, on a two
+            year Flemish government grant. Year two is inside the company</span>
+          <span class="cy">2026</span>
+        </li>
+        <li>
+          <span class="ck">Award</span>
+          <span class="cv">Won a personal grant at the largest multiple sclerosis conference in
+            the world, for the method behind the paper below</span>
+          <span class="cy">2025</span>
+        </li>
+        <li>
+          <span class="ck">Paper</span>
+          <span class="cv">The first personalized federated learning in multiple sclerosis, on
+            records from ordinary care. <span class="r">npj Digital Medicine</span></span>
+          <span class="cy">2025</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ================= THE RESULT ================= -->
+
+  <!-- ================= BUILT ================= -->
+  <!-- Three projects you can actually operate. Every number in these comes from
+       the papers, so the figures are evidence rather than decoration. -->
+  <section class="band sec" id="work">
+    <div class="container grid">
+      <div class="col-label">
+        <p class="lab"><span class="num">01</span><span class="rule"></span><span class="txt">Work</span></p>
+      </div>
+      <div class="col-main">
+        <h2 class="head">What it produced</h2>
+
+
+        <p class="lede">
+          The records sit in many places, in many countries, and the rules keep them there. So I
+          send the model to the data instead. That is called federated learning.
+          It is how I do it. It is not what I do. And I keep it simple enough that a small team
+          can run it without me.
+        </p>
+
+
+      </div>
+
+      <div class="col-main resume">
+
+        <article class="demo" id="d-pfl">
+          <!-- The question leads, the method follows. Two lines above this the page says
+               federated learning is how the work is done and not what the work is; a
+               heading naming the method first took that straight back. -->
+          <header class="demo-head">
+            <h3 class="dn"><a href="https://doi.org/10.1038/s41746-025-01788-8">Two years ahead, will this person get worse?</a></h3>
+            <span class="tagbench">Real patient records. Federation simulated</span>
+            <span class="dr">Led it. 2025</span>
+          </header>
+
+          <p class="dmeta">Personalized federated learning, in <span class="r">npj Digital
+            Medicine</span>. First author.</p>
+
+        <p class="lede"><b>Privacy is supposed to cost you.</b> Keep the data apart, get a
+          worse model. That much is true, and the bottom bar is what it costs. The top bar is
+          what you get back. All three answer the same question, on the same patients. The score
+          is area under the curve, where 0.50 is a coin toss and 1.00 is perfect.</p>
+
+        <details class="fold">
+          <summary>How it was run</summary>
+          <p>These records were already gathered into one research registry. I split them back
+            into country groups and made each group train on its own, passing only the model
+            between them. So it measures what federation does to the score, not a live
+            federation.</p>
+        </details>
+
+        <div class="result">
+          <p class="rax"><span>0.50, a coin toss</span><span>1.00, perfect</span></p>
+          <div class="rbar win">
+            <span class="rlab">Federated, and fitted to each country.</span>
+            <span class="rtrack"><i style="width:67.96%"></i></span>
+            <span class="rval">0.8398</span>
+          </div>
+          <div class="rbar">
+            <span class="rlab">All data pooled in one place.</span>
+            <span class="rtrack"><i style="width:61.84%"></i></span>
+            <span class="rval">0.8092</span>
+          </div>
+          <div class="rbar">
+            <span class="rlab">Federated, one shared model for everyone.</span>
+            <span class="rtrack"><i style="width:56.80%"></i></span>
+            <span class="rval">0.7840</span>
+          </div>
+          <p class="rnote">Standard deviations were 0.0019, 0.0012 and 0.0019, across ten
+            repetitions. All three rows are
+            <a href="https://doi.org/10.1038/s41746-025-01788-8">the paper</a>, table 1.</p>
+        </div>
+
+        <p class="gains"><b>What the top bar beats, and by how much.</b> Take the same setup and
+          switch the country by country fitting off. Against that, it is <b>7.2% better</b> at
+          telling apart who will get worse from who will not. And <b>31% better</b> at finding
+          them without flagging half the group. In the usual names, ROC-AUC and AUC-PR. Against
+          the middle bar, everything pooled in one place, it is <b>3.8% better</b>. That switched
+          off version is not the bar at the bottom.</p>
+
+        <figure class="shot">
+          <picture><source srcset="assets/img/talk-slide.webp" type="image/webp"><img src="assets/img/talk-slide.jpg" width="1400" height="787" loading="lazy"
+               decoding="async"
+               alt="Ashkan Pirmani presenting at a lectern. The slide behind him reads: Good for
+                    all. Not always good enough for one. A general purpose framework can be
+                    technically functional, and still practically inaccessible, for the very next
+                    project in the same team."></picture>
+          <figcaption><b>The whole argument, on one slide.</b> A model that is good for everyone
+            on average can still be no use to any single country. That is what the chart above
+            measures, and it is what I have been saying out loud since before I could prove
+            it.</figcaption>
+        </figure>
+
+        <p class="clead">Measured on</p>
+        <div class="counts">
+          <div><span class="cn">26,246</span><span class="cl">patients</span></div>
+          <div><span class="cn">283,115</span><span class="cl">clinical episodes</span></div>
+          <div><span class="cn">146</span><span class="cl">centers contributed</span></div>
+          <div><span class="cn">32</span><span class="cl">country groups</span></div>
+        </div>
+
+        <p class="mine"><b>The decision I owned.</b> Stop training one model for everyone. Fit
+          each country instead, with a network built to carry a shared half and a private half at
+          once. I conceived it, ran it, and wrote it. First author in a 73 person
+          collaboration.</p>
+
+        <p class="rsrc">The middle bar is the ceiling everyone assumes. It is not. And plain
+          federated averaging, the bottom bar, really is worse than pooling, which is why the
+          field keeps saying privacy is expensive.</p>
+
+        <details class="fold keep">
+          <summary>One caveat I will make myself, before you make it for me</summary>
+          <p class="rsrc caveat">The pooled model is a single global model. The winner is fitted to each country. So what
+          won here is that fitting, not the sharing on its own. What the sharing did was make the
+          fitting possible without gathering the records first. That is the claim I
+          stand behind, and it is the more useful one. The next thing to prove is that it holds
+          when the groups are real and separate, not split apart after the fact. <a href="https://doi.org/10.1038/s41746-025-01788-8">Pirmani et al., <i>npj Digital
+          Medicine</i> 8(478), 2025</a>. <a href="https://github.com/ashkan-pirmani/FL-MS-RWD">Code
+          is public</a>.</p>
+        </details>
+        </article>
+
+        <!-- ---------- the one demo that ran for real. FL4E moved to work.html:
+             two interactive figures made this page ten screens long. ---------- -->
+
+        <p class="lede small">Every number above came out of the paper cited beside it.</p>
+
+        <!-- ---------- the two prototypes, compact ---------- -->
+        <!-- FLoRank and FLkit get a summary and a link instead of a third and fourth
+             interactive figure. Four full demos made the page eleven screens long. -->
+
+        <!-- Four one line rows, each an outcome and a way in. The table that was
+             here repeated the decision framing a third time on one page, and the
+             detail it held now lives on the page built to hold it. -->
+        <div class="also">
+          <p class="also-h">Four more, with the controls left on</p>
+          <ul>
+            <li><a href="work.html#d-gdsi"><b>Global Data Sharing Initiative</b>
+              <span>45.5% more records reachable, in a study whose findings went into the global
+              covid advice</span></a></li>
+            <li><a href="work.html#d-dof"><b>FL4E</b>
+              <span>Half the sites can stay centralized and you keep 97.5% of the score</span></a></li>
+            <li><a href="work.html#d-lora"><b>FLoRank</b>
+              <span>A site that joins later starts from something, instead of from nothing</span></a></li>
+            <li><a href="work.html#d-flkit"><b>FLkit</b>
+              <span>Public and live, supported by ELIXIR Belgium</span></a></li>
+          </ul>
+        </div>
+
+
+
+        <p class="after"><a href="publications.html">Publications</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NETWORKS ================= -->
+  <section class="band sec" id="networks">
+    <div class="container grid">
+      <div class="col-label">
+        <p class="lab"><span class="num">02</span><span class="rule"></span><span class="txt">Networks</span></p>
+      </div>
+      <div class="col-main">
+        <h2 class="head">None of this works alone</h2>
+
+        <p class="lede">I grew up speaking Turkish, Azerbaijani and Persian. English came fourth,
+          and Dutch is still coming. It is probably why I write in short sentences.</p>
+
+
+
+        <figure class="shot crop">
+          <picture><source srcset="assets/img/collab.webp" type="image/webp"><img src="assets/img/collab.jpg" width="1400" height="933" loading="lazy"
+               decoding="async"
+               alt="Five people crowded around a laptop at Hack4Health in Flanders Expo, Ghent.
+                    Ashkan Pirmani is seated at the left, watching the screen."></picture>
+          <figcaption><b>Hack4Health, Flanders Expo, Ghent.</b> This is what the work actually
+            looks like most of the time. Five people, one laptop, and nobody in the picture
+            shares a first language.</figcaption>
+        </figure>
+
+        <div class="whogrid">
+          <article class="wc" data-mark="industry">
+            <svg class="wmark" viewBox="0 0 64 64" aria-hidden="true"></svg>
+            <h3>Who I build with</h3>
+            <p>The people who got me here. <a href="https://www.liesbetmpeeters.be">Liesbet Peeters</a> at Hasselt and <a href="https://www.yvesmoreau.net">Yves Moreau</a> at KU Leuven promoted both doctorates. The <a href="https://www.ohdsi.org/">OHDSI</a> community is where most of the standards work I rely on gets argued out.</p>
+          </article>
+          <article class="wc" data-mark="reach">
+            <svg class="wmark" viewBox="0 0 64 64" aria-hidden="true"></svg>
+            <h3>The networks I work in</h3>
+            <p>The <b>MSBase</b> registry, where the records behind the study above came from. 146 centers, grouped into 32 countries for that study. <b>OHDSI</b> Belgium, and the organizing team for OHDSI Europe 2025. <b>ELIXIR Belgium</b> supports FLkit. It all runs on <b>Flower</b>.</p>
+          </article>
+          <article class="wc" data-mark="people">
+            <svg class="wmark" viewBox="0 0 64 64" aria-hidden="true"></svg>
+            <h3>The people I sit between</h3>
+            <p>Clinicians, epidemiologists, registry custodians, engineers and lawyers, across more than thirty countries. None of them share a vocabulary. The industry has names for the work of holding them together: harmonization, phenotype definition, and data quality. It is where a cohort either becomes trustworthy or does not.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="band sec" id="contact">
+    <div class="container grid">
+      <div class="col-label">
+        <p class="lab"><span class="num">03</span><span class="rule"></span><span class="txt">Contact</span></p>
+      </div>
+      <div class="col-main">
+        <h2 class="head">Bring me a data problem</h2>
+
+        <div class="avail">
+          <p class="a1">If you have data that cannot move, or a question that needs more
+            patients than one place holds, I would like to hear about it.</p>
+        </div>
+
+        <!-- email gets its own full width row. it is the longest value here and
+             the one that matters, and it used to run out of its cell. -->
+        <a class="mailrow" href="#" data-u="ashkan_pirmani" data-h="outlook" data-t="com" data-mailto><span class="w">Email</span><span class="v" data-mail></span></a><noscript><span class="mailplain">ashkan_pirmani [at] outlook.com</span></noscript>
+
+        <!-- Papers left the navigation so that a phone and a laptop show the same
+             one. It gets a permanent place here instead. -->
+        <div class="links four">
+          <a href="publications.html"><span class="w">Papers</span><span class="v">Publications</span></a>
+          <a href="cv.html"><span class="w">Background</span><span class="v">Full CV</span></a>
+          <a href="https://github.com/ashkan-pirmani"><span class="w">Code</span><span class="v">GitHub</span></a>
+          <a href="https://www.linkedin.com/in/ashkan-p-3b8a8896/"><span class="w">Also</span><span class="v">LinkedIn</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <span>Ashkan Pirmani. KU Leuven and Hasselt University, Belgium.</span>
+      <span>Last updated 2 September 2026. <a href="#" data-u="ashkan_pirmani" data-h="outlook" data-t="com" data-mailto><span data-mail></span></a><noscript><span class="mailplain">ashkan_pirmani [at] outlook.com</span></noscript> </span>
+    </div>
+  </footer>
+
+</main>
+
+<script src="assets/app.js?v=441ae623"></script>
+</body>
+</html>
