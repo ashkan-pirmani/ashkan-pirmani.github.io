@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Letting go of FL4E. Ashkan Pirmani</title>
+<meta name="description" content="I built a framework so teams would not rebuild the same foundations. My own next study did not use it, and I worked out why.">
+<link rel="canonical" href="https://ashkan-pirmani.github.io/note-letting-go-of-fl4e.html">
+<meta name="author" content="Ashkan Pirmani">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0E0D" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Letting go of FL4E. Ashkan Pirmani">
+<meta property="og:description" content="I built a framework so teams would not rebuild the same foundations. My own next study did not use it, and I worked out why.">
+<meta property="og:url" content="https://ashkan-pirmani.github.io/note-letting-go-of-fl4e.html">
+<meta property="og:image" content="https://ashkan-pirmani.github.io/assets/img/og-note-letting-go-of-fl4e.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ashkan Pirmani. Letting go of FL4E. Ashkan Pirmani">
+<meta property="og:site_name" content="Ashkan Pirmani">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Letting go of FL4E. Ashkan Pirmani">
+<meta name="twitter:description" content="I built a framework so teams would not rebuild the same foundations. My own next study did not use it, and I worked out why.">
+<meta name="twitter:image" content="https://ashkan-pirmani.github.io/assets/img/og-note-letting-go-of-fl4e.jpg">
+<meta name="twitter:image:alt" content="Ashkan Pirmani. Letting go of FL4E. Ashkan Pirmani">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111111'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial,sans-serif' font-size='20' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/img/icon.png">
+<link rel="preload" href="assets/fonts/schibsted.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add('js')</script>
+<script>try{sessionStorage.setItem('seen','1')}catch(e){}document.documentElement.classList.add('seen')</script>
+<link rel="stylesheet" href="assets/style.css?v=657eb0da">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ashkan Pirmani","url":"https://ashkan-pirmani.github.io/","image":"https://ashkan-pirmani.github.io/assets/img/portrait.jpg","jobTitle":"Applied Machine Learning Scientist","description":"Applied machine learning scientist in health research. Gets useful evidence out of real world data: defining the question with the people who need it, establishing what the records can answer, and building what the study needs.","affiliation":[{"@type":"CollegeOrUniversity","name":"KU Leuven","url":"https://www.kuleuven.be/"},{"@type":"CollegeOrUniversity","name":"Hasselt University","url":"https://www.uhasselt.be/"}],"knowsAbout":["Real World Evidence","Real World Data","Applied Machine Learning","Evidence Generation","Observational Research","OMOP Common Data Model","OHDSI","Cohort Definition","Phenotyping","Data Quality","Data Feasibility","Registry Harmonization","Federated Learning","Personalized Federated Learning","Privacy-Preserving Machine Learning","Health Data Science","Multiple Sclerosis Research","FAIR Data","PyTorch","Flower","Survival Analysis","Python"],"sameAs":["https://scholar.google.com/citations?user=RC2DM7kAAAAJ","https://github.com/ashkan-pirmani","https://www.linkedin.com/in/ashkan-p-3b8a8896/","https://www.researchgate.net/profile/Ashkan-Pirmani"]}</script>
+</head>
+<body>
+
+<a class="skip" href="#top">Skip to the content</a>
+<header class="site-head" id="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html">Ashkan Pirmani</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span class="bars" aria-hidden="true"><i></i><i></i></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html" class="nav-home"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.2 7.4 8 2.6l5.8 4.8"/><path d="M3.9 6.3v7.1h3v-4h2.2v4h3V6.3"/></svg>Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="notes.html" class="on">Notes</a>
+      <a href="cv.html" class="nav-cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" tabindex="-1">
+  <article class="note">
+    <div class="wrap note-wrap">
+      <div class="ph-art ph-loop ph-open" aria-hidden="true"><svg class="qc-loop" viewBox="0 0 300 44"><rect x="0" y="26" width="62" height="14"/><rect x="72" y="26" width="62" height="14"/><rect x="144" y="26" width="62" height="14"/><rect class="last" x="216" y="26" width="48" height="14"/><path class="bend" d="M264 33 C292 33 296 6 262 6 L96 6"/></svg></div>
+      <header class="note-head">
+        <p class="crumb"><a href="notes.html">Notes</a> / September 2026</p>
+        <h1>Letting go of FL4E</h1>
+        <p class="dek">A tool I built and believed in, and why it went unused.</p>
+        <p class="by">3 minute read.</p>
+      </header>
+
+      <div class="note-body">
+        <p>For a while, I believed FL4E could stop teams from rebuilding the same foundations for
+          every study. It was a framework for federated learning in health research: a graphical
+          interface, parts you could plug in and reuse, and one idea I was proud of, the degree of
+          federation. Each center decides for itself whether its records leave. I
+          <a href="https://doi.org/10.2196/55496">published it in 2024</a>, and I wanted it to become
+          something other people would build on.</p>
+
+        <div class="dof" role="figure" aria-label="The degree of federation, three measured points">
+          <div class="dof-row"><span>All four centers send their records</span><span class="bar" style="width:62.4%"></span><span class="v">0.812</span></div>
+          <div class="dof-row"><span>Two send, two keep theirs</span><span class="bar" style="width:65.0%"></span><span class="v">0.825</span></div>
+          <div class="dof-row top"><span>All four keep theirs</span><span class="bar" style="width:69.2%"></span><span class="v">0.846</span></div>
+          <p class="fig-note">The degree of federation on a public benchmark. Fed-Heart-Disease, 740
+            records across 4 centers, logistic regression, area under the curve. Bars start at
+            0.5, a coin toss. Small on purpose, so the shape is easy to check. It is not a clinical result.
+            <a href="https://doi.org/10.2196/55496">Source</a>.</p>
+        </div>
+
+        <p>Then I started my own next big study, on disability progression in multiple sclerosis. FL4E
+          was there, ready, and I did not use it. I built a pipeline for that one task instead, in
+          code, on a computing cluster.</p>
+
+        <p>FL4E did not fit that study. I needed tight control over training, evaluation and tuning,
+          and the model kept changing while I worked. The interface that made FL4E easy for newcomers
+          slowed me down. The data agreement also required all computing to happen inside one
+          approved environment. I decided not to build a second version. I retired it.</p>
+
+        <p>Letting go of what I had expected from it was hard. I worked out why it happened, and <a href="https://doi.org/10.3233/SHTI260367">wrote it up</a>. I found five
+          reasons:</p>
+        <ol>
+          <li><b>Scope.</b> FL4E tried to serve every project, and mine was narrow, so most of its
+            flexibility was simply overhead for me.</li>
+          <li><b>How you work with it.</b> I needed scripts, and FL4E expected you to click through a
+            graphical interface.</li>
+          <li><b>Timing.</b> The community I hoped would form around it did not exist yet, and it had only
+            been tested on one small public benchmark.</li>
+          <li><b>Infrastructure and rules.</b> Beyond the data agreement, FL4E had no one dedicated to maintaining it.</li>
+          <li><b>Trust and governance.</b> In the end, reuse depended more on institutions agreeing to take
+            part than on the code.</li>
+        </ol>
+
+        <figure class="wide mie">
+          <div class="dp">
+          <picture>
+            <source srcset="assets/img/talk-slide.webp" type="image/webp">
+            <img src="assets/img/talk-slide.jpg" width="1400" height="788" loading="lazy" decoding="async"
+                 alt="Ashkan Pirmani at a lectern in front of a large screen. The slide reads: Good
+                      for all. Not always good enough for one. A general purpose framework can be
+                      technically functional, and still practically inaccessible, for the very next
+                      project in the same team.">
+          </picture>
+          <svg class="dp-arrow" viewBox="0 0 1400 788" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="M470 592 C400 600 300 592 236 576"/><path vector-effect="non-scaling-stroke" d="M253.8 592.1 L236 576 L259.3 570.2"/></svg>
+          </div>
+          <figcaption>Genova, Medical Informatics Europe 2026.</figcaption>
+        </figure>
+
+        <p>What I would build now is smaller: tools that fit together, so a team can take only what it
+          needs, instead of one whole platform.</p>
+
+        <p>The code is public, and the degree of federation is in it for anyone who wants to try it on real data.</p>
+
+        <p class="src"><a href="https://github.com/ashkan-pirmani/FL4E">FL4E on GitHub</a>. The study
+          that did not use it: <a href="work-disability-progression.html">Two years ahead, will this
+          person get worse?</a></p>
+      </div>
+    </div>
+  </article>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap contact-in">
+      <div>
+        <div class="hi"><svg class="waver" viewBox="0 0 44 64" aria-hidden="true"><circle class="wv-h" cx="20" cy="9" r="6"/><circle cx="20" cy="20" r="2.2"/><circle cx="20" cy="26" r="2.2"/><circle cx="20" cy="32" r="2.2"/><circle cx="20" cy="38" r="2.2"/><circle cx="15" cy="24" r="2.2"/><circle cx="12" cy="30" r="2.2"/><circle cx="10" cy="36" r="2.2"/><circle cx="17" cy="45" r="2.2"/><circle cx="15" cy="51" r="2.2"/><circle cx="14" cy="57" r="2.2"/><circle cx="23" cy="45" r="2.2"/><circle cx="25" cy="51" r="2.2"/><circle cx="26" cy="57" r="2.2"/><circle cx="26" cy="20" r="2.2"/><circle cx="31" cy="19" r="2.2"/><g class="wv-arm"><circle cx="33" cy="13" r="2.2"/><circle class="wv-hand" cx="34" cy="6.5" r="2.8"/></g></svg><h2 id="contact-h">Let's talk.</h2></div>
+        <p class="contact-next">If your question depends on health data that can't simply be put in one place, I probably want to hear about it.</p>
+        <p class="contact-act"><a class="btn contact-btn" href="#" data-u="ashkan_pirmani" data-h="outlook" data-t="com" data-mailto>Email me</a><noscript><span class="mailplain">ashkan_pirmani [at] outlook.com</span></noscript></p>
+      </div>
+      <div class="contact-side">
+        <figure class="hm-fig"><svg class="art contact-net hello-map" viewBox="0 0 460 257" role="img" aria-label="A dot map from Britain to Iran. A greeting in each language I speak, where it is spoken: Merhaba in Turkey, xoş gəldin in Azeri, written in Persian script, in Urmia, Salam in Azerbaijani in Baku, dorud in Persian in Tehran, Hello in Britain and Dag in Flanders. A red line runs from Tehran to Belgium. One ring, out in the Atlantic, is left open for you."><path class="hm-land" d="M144.0 3.2h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m64.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M144.0 9.6h0m6.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m44.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M80.0 16.0h0m6.4 0h0m89.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m44.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M80.0 22.4h0m6.4 0h0m6.4 0h0m70.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m38.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M80.0 28.8h0m6.4 0h0m70.4 0h0m6.4 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m38.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M86.4 35.2h0m6.4 0h0m64.0 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m44.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M67.2 41.6h0m19.2 0h0m6.4 0h0m6.4 0h0m57.6 0h0m6.4 0h0m44.8 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M54.4 48.0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m57.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M60.8 54.4h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m32.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M54.4 60.8h0m6.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M80.0 67.2h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M86.4 73.6h0m6.4 0h0m6.4 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M118.4 80.0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M99.2 86.4h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M86.4 92.8h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M92.8 99.2h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M99.2 105.6h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M105.6 112.0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m32.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M105.6 118.4h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M105.6 124.8h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m64.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m32.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M99.2 131.2h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m70.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M60.8 137.6h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m44.8 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m76.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m32.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M60.8 144.0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m32.0 0h0m19.2 0h0m6.4 0h0m6.4 0h0m32.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m83.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M60.8 150.4h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m64.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m38.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M60.8 156.8h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m51.2 0h0m6.4 0h0m32.0 0h0m6.4 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m19.2 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M60.8 163.2h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m51.2 0h0m44.8 0h0m25.6 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M54.4 169.6h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m96.0 0h0m25.6 0h0m6.4 0h0m32.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m38.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M60.8 176.0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m89.6 0h0m6.4 0h0m38.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m38.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M60.8 182.4h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m70.4 0h0m25.6 0h0m44.8 0h0m32.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m32.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M73.6 188.8h0m6.4 0h0m38.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m115.2 0h0m12.8 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M105.6 195.2h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m147.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M73.6 201.6h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m134.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M73.6 208.0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m147.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M60.8 214.4h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m140.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M60.8 220.8h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m38.4 0h0m6.4 0h0m76.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M54.4 227.2h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m64.0 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M54.4 233.6h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m25.6 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M54.4 240.0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M54.4 246.4h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0M48.0 252.8h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m12.8 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m19.2 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0m6.4 0h0"/><path class="a-m a-dr hm-link" pathLength="1" style="--d:500" d="M294.5 161.2 L363.9 180.3"/><path class="a-m a-dr hm-link" pathLength="1" style="--d:620" d="M363.9 180.3 L399.7 195.2"/><path class="a-m a-dr hm-link" pathLength="1" style="--d:740" d="M363.9 180.3 L391.1 157.3"/><path class="a-m a-dr hm-link" pathLength="1" style="--d:860" d="M107.2 68.2 L134.6 73.2"/><path class="a-r a-dr hm-arc" pathLength="1" style="--d:1000" d="M399.7 195.2 Q267.2 3.2 134.6 73.2"/><path class="a-r a-dash a-dr" style="--d:1700" d="M128.6 79.2 L28.9 179.7"/><g class="hm-w"><title>Turkish</title><circle class="a-ft a-pp hm-n" style="--d:250" cx="294.5" cy="161.2" r="5.5"/><text class="cn-w a-pp" style="--d:350" lang="tr" x="294.5" y="147.2" text-anchor="middle">Merhaba</text></g><g class="hm-w"><title>Azeri, my mother tongue, as written in Urmia: xoş gəldin, welcome</title><circle class="a-ft a-pp hm-n" style="--d:360" cx="363.9" cy="180.3" r="5.5"/><text class="cn-w a-pp" style="--d:460" lang="azb" direction="rtl" x="349.9" y="199.3" text-anchor="start">خوش گلدین</text></g><g class="hm-w"><title>Azerbaijani, as written in Azerbaijan</title><circle class="a-ft a-pp hm-n" style="--d:470" cx="391.1" cy="157.3" r="5.5"/><text class="cn-w a-pp" style="--d:570" lang="az" x="402.1" y="162.3" text-anchor="start">Salam</text></g><g class="hm-w"><title>Persian, the language of school: dorud</title><circle class="a-ft a-pp hm-n" style="--d:580" cx="399.7" cy="195.2" r="5.5"/><text class="cn-w a-pp" style="--d:680" lang="fa" direction="rtl" x="399.7" y="218.2" text-anchor="middle">درود</text></g><g class="hm-w"><title>English</title><circle class="a-ft a-pp hm-n" style="--d:690" cx="107.2" cy="68.2" r="5.5"/><text class="cn-w a-pp" style="--d:790" lang="en" x="97.2" y="73.2" text-anchor="end">Hello</text></g><g class="hm-w"><title>Dutch, as said in Flanders</title><circle class="a-ft a-pp hm-n" style="--d:800" cx="134.6" cy="73.2" r="7"/><text class="cn-w a-pp" style="--d:900" lang="nl" x="144.6" y="91.2" text-anchor="start">Dag</text></g><circle class="cn-you" cx="19.9" cy="188.7" r="11"/><text class="cn-q" x="19.9" y="220.7" text-anchor="middle">you</text></svg><figcaption>A greeting in each language I speak, where it lives.</figcaption></figure>
+        <ul class="contact-links">
+        <li><a href="https://www.linkedin.com/in/ashkan-p-3b8a8896/"><span class="w">LinkedIn</span><span class="v">Profile</span></a></li>
+        <li><a href="cv.html"><span class="w">CV</span><span class="v">Read or download</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="site-foot">
+    <div class="wrap foot-in">
+      <span>Ashkan Pirmani. Based in Belgium. Updated 30 September 2026. <span class="quiet">No analytics, no tracking.</span></span>
+      <span class="foot-links"><a href="publications.html"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2.5h7l3.5 3.5v11.5H5z"/><path d="M12 2.5V6h3.5M7.5 10h5M7.5 13h5"/></svg>Publications</a><a href="talks.html"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="7.5" y="2.5" width="5" height="9" rx="2.5"/><path d="M4.5 9.5a5.5 5.5 0 0 0 11 0M10 15v2.5M7 17.5h6"/></svg>Talks</a><a href="https://github.com/ashkan-pirmani"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="5.2" cy="4.6" r="2.2"/><circle cx="5.2" cy="15.4" r="2.2"/><circle cx="14.8" cy="4.6" r="2.2"/><path d="M5.2 6.8v6.4M14.8 6.8v2.4a3.2 3.2 0 0 1-3.2 3.2H8.4a3.2 3.2 0 0 0-3.2 3.2"/></svg>GitHub</a><a href="https://scholar.google.com/citations?user=RC2DM7kAAAAJ"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.6 18.4 7 10 11.4 1.6 7z"/><path d="M4.8 8.9v4.3c0 1.7 2.3 3.1 5.2 3.1s5.2-1.4 5.2-3.1V8.9"/></svg>Google Scholar</a><a href="https://www.linkedin.com/in/ashkan-p-3b8a8896/"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="1.5" y="1.5" width="17" height="17" rx="2.5"/><path d="M6 8.5v6M6 5.6v.1M9.5 14.5v-6M9.5 11.2c0-1.6 1-2.7 2.5-2.7s2.5 1 2.5 2.7v3.3"/></svg>LinkedIn</a></span>
+    </div>
+  </footer>
+</main>
+
+<script src="assets/app.js?v=bcb59af1"></script>
+</body>
+</html>
